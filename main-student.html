@@ -1,48 +1,35 @@
 <html>
-	<head>
-        <link rel="stylesheet" href="css/main-student.css">
-		<script src="js/main-student.js"></script>
-	</head>
-	<body>
-		<header id="header">
-		
-            <a id="title" href="#">
-               
-            </a>
-    
-            <nav>
-                <ul>
-                    <li><a href="https://this-page-intentionally-left-blank.org/">Subjects</a></li>
-                    <li><a href="https://this-page-intentionally-left-blank.org/">Options</a></li>
-                    <li><a href="https://this-page-intentionally-left-blank.org/">Profile</a></li>
-                    <li><a onclick="myFunction()">Log out</a></li>
-                    
-                    <script>
-                    function myFunction() {
-                      var txt;
-                      if (confirm("Press a button!")) {
-                        txt = "You pressed OK!";
-                      } else {
-                        txt = "You pressed Cancel!";
-                      }
-                      document.getElementById("demo").innerHTML = txt;
-                    }
-                    </script>
-                </ul>
-            </nav><!-- / nav -->
-    
-        </header>
-		<main>
-            <div class="col-1">
-                
-            </div>
-            <div class="col-2">
-                
-            </div>
-            <div class="col-3">
-                
-            </div>
-        </main>
-		<footer></footer>
-	</body>
+
+<head>
+    <link rel="stylesheet" href="css/main-student.css">
+    <script src="js/main-student.js"></script>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="col-left">
+            <button class="button button1">Contents</button>
+            <button class="button button1">Forum</button>
+            <button class="button button1">Participants</button>
+            <button class="button button1">Grades</button>
+            <button class="button button1">Work Groups</button>
+        </div>
+        <div class="col-center">
+            <article class='course'>
+                <div class="course-name"></div>
+                <div class="course-info">
+                    <div class="professor"></div>
+                </div>
+            </article>
+        </div>
+        <div class="col-right">
+
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
 </html>
