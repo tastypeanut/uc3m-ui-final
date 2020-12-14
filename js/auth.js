@@ -2,7 +2,18 @@
 //if it is it redirects to the main page (meaning the session is already open)
 var cookie_in_use = localStorage.getItem('cookie_in_use');
 if (cookie_in_use != null && getCookie(cookie_in_use) != null) {
-    window.location.href = "index.html";
+    var cookie_decoded_parsed = JSON.parse(atob(getCookie(cookie_in_use)));
+    switch (cookie_decoded_parsed['role']){
+        case 'Administrator':
+            window.location.href = "main/main-admin.html";
+            break;
+        case 'Teacher':
+            window.location.href = "main/main-teacher.html";
+            break;
+        case 'Student':
+            window.location.href = "main/main-student.html";
+            break;
+    }
 }
 
 $(document).ready(function(){
@@ -104,7 +115,17 @@ function form_login(){
         var cookie_decoded_parsed = JSON.parse(atob(cookie_value));
         if(cookie_decoded_parsed['password'] == obj['password']){
             localStorage.setItem('cookie_in_use', obj['email']);
-            window.location.href = "index.html";
+            switch (cookie_decoded_parsed['role']){
+                case 'Administrator':
+                    window.location.href = "main/main-admin.html";
+                    break;
+                case 'Teacher':
+                    window.location.href = "main/main-teacher.html";
+                    break;
+                case 'Student':
+                    window.location.href = "main/main-student.html";
+                    break;
+            }
         } else if(cookie_decoded_parsed['password'] != obj['password']){
             alert("Incorrect password");
         }
@@ -123,7 +144,17 @@ function form_register(){
     if(getCookie(obj['email']) == null){
         setCookie(obj['email'], value, 100);
         localStorage.setItem('cookie_in_use', obj['email']);
-        window.location.href = "index.html";
+        switch (obj['role']){ /*This isn't the best way to do this, but it is the quickest. The propper way would be to get the recently stored cookie, and check the role value with that*/
+            case 'Administrator':
+                window.location.href = "main/main-admin.html";
+                break;
+            case 'Teacher':
+                window.location.href = "main/main-teacher.html";
+                break;
+            case 'Student':
+                window.location.href = "main/main-student.html";
+                break;
+        }
     } else {
         alert("The email " + obj['email'] + " is already registered. Please choose a new one.");
     }
