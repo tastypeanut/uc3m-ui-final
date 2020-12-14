@@ -17,10 +17,11 @@ main {
 
 /* Left column */
 
-.col-left{
+.col-left {
     width: 22vw;
     margin-left: 2vw;
 }
+
 .button {
     background-color: #4CAF50;
     /* Green */
@@ -68,7 +69,8 @@ main {
     width: 72%;
     padding: 10px 30px;
     margin-left: 3%;
-    border: 1px solid grey;
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 8px rgba(61, 59, 175, 0.288);
     border-radius: 10px;
     align-items: left;
 }
@@ -76,6 +78,8 @@ main {
 li {
     margin-bottom: 10px;
 }
+
+
 /* Students styles */
 
 .student {
