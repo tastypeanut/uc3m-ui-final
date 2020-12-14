@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 
             //We make some visual changes to the page's header
-            $("#form_header").find("img").css("border-right", "2px solid #111111c9");
+            $("#form_header").find("img").css("border-right", "2px solid #FFFFFF");
             $("#form_header").find("img").after(atob("PGgyIGNsYXNzPSJjb2wtNiBjb2wtcy02IGNvbC1wLTYiPlJlZ2lzdHJhdGlvbjwvaDI+"));
 
             //We change the IDs and values for the buttons
