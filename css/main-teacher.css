@@ -18,6 +18,10 @@ main {
 
 /* Left column */
 
+.col-left{
+    width: 22vw;
+    margin-left: 2vw;
+}
 .button {
     background-color: #4CAF50;
     /* Green */
@@ -31,8 +35,7 @@ main {
     padding: 15px 32px;
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 22vw;
-    margin-left: 2vw;
+    width: 100%;
 }
 
 .button1 {
