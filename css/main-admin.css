@@ -1,9 +1,26 @@
+/* Header */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 main {
     display: flex;
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* Left column */
+
+.col-left{
+    width: 22vw;
+    margin-left: 2vw;
+}
 .button {
     background-color: #4CAF50;
     /* Green */
@@ -17,7 +34,7 @@ main {
     padding: 15px 32px;
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 150px;
+    width: 100%;
 }
 
 .button1 {
@@ -27,6 +44,19 @@ main {
 }
 
 .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buttonHome {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.buttonHome:hover {
     background-color: #4CAF50;
     color: white;
 }

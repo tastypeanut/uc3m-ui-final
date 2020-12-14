@@ -18,6 +18,10 @@ main {
 
 /* Left column */
 
+.col-left{
+    width: 22vw;
+    margin-left: 2vw;
+}
 .button {
     background-color: #4CAF50;
     /* Green */
