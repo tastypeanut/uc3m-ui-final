@@ -2,9 +2,10 @@
 
 * {box-sizing: border-box;}
 
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+main {
+    display: flex;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -58,9 +59,6 @@ body {
   }
 }
 
-
-
-
 /* Left column */
 
 .button {
@@ -88,4 +86,69 @@ body {
 .button1:hover {
     background-color: #4CAF50;
     color: white;
+}
+
+
+/* Center column */
+
+.col-center {
+    width: 44%;
+    padding: 40px 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Course list */
+
+.course-card {
+    width: 90%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.164);
+    border: 1px solid rgba(211, 211, 211, 0.438);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.course-card .course-name {
+    padding: 0 20px;
+    line-height: 0.5rem;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-left: 1px solid #1d355727;
+    padding-left: 20px;
+    flex-grow: 1;
+    background-color: #F1FAEE;
+}
+
+.course-info>* {
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.go-to-course {
+    width: 20%;
+    background: rgb(241, 250, 238);
+    background: linear-gradient(90deg, rgba(241, 250, 238, 1) 0%, rgba(119, 171, 189, 1) 50%);
+    font-size: 36px;
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.go-to-course p {
+    margin: auto;
+    margin-left: 68%;
 }
