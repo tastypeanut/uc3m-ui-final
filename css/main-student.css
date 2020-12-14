@@ -49,6 +49,11 @@ main {
 
 /* Course list */
 
+.title {
+    align-self: start;
+    padding-left: 5%;
+}
+
 .course-card {
     width: 90%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.164);
@@ -63,11 +68,13 @@ main {
 .course-card .course-name {
     padding: 0 20px;
     line-height: 0.5rem;
+    width: 100px;
 }
 
 .course-info {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 100%;
     border-left: 1px solid #1d355727;
     padding-left: 20px;
@@ -85,10 +92,14 @@ main {
     width: 20%;
     background: rgb(241, 250, 238);
     background: linear-gradient(90deg, rgba(241, 250, 238, 1) 0%, rgba(119, 171, 189, 1) 50%);
-    font-size: 36px;
+    font-size: 2vw;
     display: flex;
     text-decoration: none;
     color: white;
+}
+
+.go-to-course:hover {
+    background: linear-gradient(90deg, rgba(241, 250, 238, 1) 0%, #31587A 50%);
 }
 
 .go-to-course p {
