@@ -31,7 +31,8 @@ main {
     padding: 15px 32px;
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 100%;
+    width: 22vw;
+    margin-left: 2vw;
 }
 
 .button1 {
