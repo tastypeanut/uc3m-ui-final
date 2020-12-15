@@ -1,11 +1,10 @@
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #131B26;
     padding: 10px 20px;
     position: relative;
     top: 0;
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .header a {
@@ -100,4 +99,35 @@ footer .bottom-nav table {
 
 footer .bottom-nav table td {
     text-align: center;
+}
+
+
+/* Breadcrumb style */
+
+.breadcrumb {
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding-left: 0;
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #1D3557;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.breadcrumb a {
+    color: white;
+    border-right: 1px solid white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #31587A;
+    padding: 20px;
+    height: 100%;
+}
+
+.breadcrumb a:first-child {
+    padding-left: 22vw;
+    background: linear-gradient(90deg, #1D3557 0%, #31587A 80%);
 }
