@@ -125,3 +125,17 @@ main {
     margin: auto;
     margin-left: 68%;
 }
+
+
+/* Center column (Course) */
+
+.col-center-course {
+    width: 44%;
+    padding: 40px 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 8px rgba(61, 59, 175, 0.288);
+    border-radius: 10px;
+    align-items: left;
+}
