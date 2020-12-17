@@ -150,6 +150,7 @@ footer .bottom-nav table td {
     left: 0;
     background-color: transparent;
     display: flex;
+    z-index: 998;
 }
 
 .popup-bg {
