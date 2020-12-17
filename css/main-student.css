@@ -11,7 +11,6 @@ body {
 main {
     display: flex;
     width: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -96,7 +95,7 @@ main {
     justify-content: space-around;
     height: 100%;
     border-left: 1px solid #1d355727;
-    padding-left: 20px;¡`ki                            z 
+    padding-left: 20px; 
     flex-grow: 1;
     background-color: #F1FAEE;
 }
@@ -132,6 +131,19 @@ main {
     margin-right: 2vw;
 }
 
+/* Center column (Course) */
+
+.col-center-course {
+    width: 44%;
+    padding: 40px 20px;
+    margin-right: 3%;
+    margin-left: 3%;
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 8px rgba(61, 59, 175, 0.288);
+    border-radius: 10px;
+    align-items: left;
+}
+
   
   
   /*CALENDAR & NEXT EVENTS STYLING*/
@@ -149,3 +161,4 @@ main {
       text-decoration: underline;
       cursor: pointer;
   }
+

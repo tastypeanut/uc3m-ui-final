@@ -1,0 +1,240 @@
+/* Header */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    width: 100vw;
+}
+
+
+/* Left column */
+
+.col-left {
+    width: 22vw;
+    margin-left: 2vw;
+}
+
+.button {
+    background-color: #4CAF50;
+    /* Green */
+    border: 1px black;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    padding: 15px 32px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    width: 100%;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Center column (Course) */
+
+.col-center-course {
+    width: 44%;
+    padding: 20px 30px;
+    margin-right: 3%;
+    margin-left: 3%;
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 8px rgba(61, 59, 175, 0.288);
+    border-radius: 10px;
+    align-items: left;
+}
+
+.icon {
+    width: 40px;
+    margin-right: 15px;
+    height: auto;
+}
+
+a {
+    color: #457B9D;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.item-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+
+/* Students styles */
+
+.student {
+    height: 10vh;
+    width: 90%;
+    background-color: white;
+    position: relative;
+    left: 2%;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    margin: 1% 0 2% 5%;
+    font-size: xx-large;
+}
+
+.student img {
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.student .info {
+    flex-grow: 1;
+}
+
+.student ul {
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+}
+
+.student ul li {
+    margin: auto;
+    width: auto;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.student ul li:last-child {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.student .participant-label {
+    text-align: right;
+    padding-right: 15px;
+}
+
+
+/* Work Groups styles */
+
+.group {
+    width: 90%;
+    background-color: white;
+    position: relative;
+    left: 2%;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 2%;
+}
+
+.group .group-label {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.group .join-button {
+    background-color: #31587A;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 15px;
+    margin-left: 20px;
+}
+
+.group-container ul {
+    list-style-type: square;
+}
+
+.group-container li {
+    margin-bottom: 10px;
+}
+
+
+/* Edit content button (for teacher) */
+
+.buttonEdit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 9px #999;
+    width: 25 px;
+    float: right;
+}
+
+.buttonEdit:hover {
+    background-color: #3e8e41
+}
+
+.buttonEdit:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit a {
+    margin-top: 20px;
+    background-color: #31587A;
+    color: white;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+select {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+input[type=file] {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}

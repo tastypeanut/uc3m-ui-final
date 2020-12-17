@@ -1,1 +1,326 @@
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/course.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" integrity="sha384-gica7iLsHNiiC8YNU6FQkgZXB9CS8Yx2T7QzwYJK58LHQzMuDpyG/GYhQryiNS0e" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" integrity="sha384-Nlo8b0yiGl7Dn+BgLn4mxhIIBU6We7aeeiulNCjHdUv/eKHx59s3anfSUjExbDxn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha384-Dziy8F2VlJQLMShA6FHWNul/veM9bCkRUaLqr199K94ntO5QUrLJBEbYegdSkkqX" crossorigin="anonymous"></script>
+    <script src="../js/cookies.js"></script>
+    <title>eAcademy</title>
+</head>
+
+<body onload="$('.edit-popup').hide();">
+    <div class="popup edit-popup">
+        <div class="popup-bg" onclick="$('.edit-popup').hide();"></div>
+        <div class=" popup-content ">
+            <div class="add-element ">
+                <h2>Add content</h2>
+                <div class="form-group ">
+                    <h4>Type</h4>
+                    <select>
+                        <option value="pdf ">PDF</option>
+                        <option value="image ">Unit</option>
+                        <option value="pdf ">Assignment</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <h4>Title</h4>
+                    <input type="text " placeholder="Title " />
+                </div>
+                <div class="form-group ">
+                    <h4>File</h4>
+                    <input type="file " id="myFile " name="filename ">
+                </div>
+                <div class="form-group button-submit ">
+                    <a href="# " onclick="$( '.edit-popup').hide(); ">Add to course</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header ">
+        <img src="../images/logo.png " height="60 ">
+        <div class="header-right ">
+            <a class="active " href=" XXXX ">Home</a>
+            <a href=" XXXX ">Messages</a>
+            <a href=" XXXX ">Log out</a>
+            <a href=" XXXX "><img src="../images/profile.png " height="55 "></a>
+        </div>
+    </div>
+    <div class="breadcrumb "><a href="#" class="course_button">Courses</a><a href=" ">User Interfaces</a></div>
+    <main>
+        <div class="col-left ">
+            <button class="button button1 course_button">Contents</button>
+            <button class="button button1">Forum</button>
+            <button class="button button1 participants_button">Participants</button>
+            <button class="button button1 ">Grades</button>
+            <button class="button button1 groups_button">Work Groups</button>
+        </div>
+        <div class="col-center-course">
+            <section id="course" class="central">
+                <button class="button buttonEdit " onclick="$( '.edit-popup').show(); ">Edit content</button>
+
+                <h2>Online Class</h2>
+                <div class="item-container ">
+                    <img class="icon " src="../images/puzle.svg ">
+                    <a href="https://eu-lti.bbcollab.com/collab/ui/scheduler/session "> Classroom [2020/21] M2.218.13882-89 MAG. User Interfaces 20/21-S1</a>
+                </div>
+                <p></p>
+
+                <h2>TOPIC 1</h2>
+                <h1 class="title ">The Human-Computer Interaction</h1>
+
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/Introduction to Human-Computer Interaction.pdf "> Introduction to Human-Computer Interaction</a>
+                </div>
+                <p></p>
+
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/Exercise1-NormanModel.pdf "> Exercise - Norman Model</a>
+                </div>
+                <p></p>
+
+                <div class="item-container ">
+                    <img class="icon " src="../images/assignment.png " class="icon ">
+                    <a> Exercise Submission - Norman Model</a>
+                </div>
+                <p></p>
+
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/Norman model - solution.pdf "> Solution - Norman Model</a>
+                </div>
+                <p></p>
+
+                <h2>TOPIC 2</h2>
+                <h1 class="title ">The User Interface</h1>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema2-1-UserInterface-Publish.pdf "> Introduction to the User Interface</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema2-2-Usability-Publish.pdf "> The Usability</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema2-3-Methodology.pdf "> The Methodology</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema2-4-Accessibility.pdf "> The Accessibility</a>
+                </div>
+                <p></p>
+
+                <h2>TOPIC 3</h2>
+                <h1 class="title ">The Web Design</h1>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema3-1-WebDesign.pdf "> Introduction to Web Design</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema3-2-WebPrinciples.pdf "> The Web Design Principles</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema3-WebDesignPatternsbyVanDuyne.pdf "> The Web Design Patterns by Van Duyne</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema3-WebDesignPatternsbyVanDuyne-Example.pdf "> The Web Design Patterns by Van Duyne - Example</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/assignment.png " class="icon ">
+                    <a> Exercise about Design Patterns and Heuristics</a>
+                </div>
+                <p></p>
+
+                <h2>TOPIC 4</h2>
+                <h1 class="title ">The Interaction with User Interfaces</h1>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema4-Requirements_and_Interaction_models.pdf "> Designing the User Interfaces</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/word.png ">
+                    <a href="../pdfs/GOMSExEn.docx "> Exercise - HTA & GOMS</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/assignment.png " class="icon ">
+                    <a> Exercise Submission - HTA & GOMS</a>
+                </div>
+                <p></p>
+                <div class="item-container ">
+                    <img class="icon " src="../images/pdf.svg ">
+                    <a href="../pdfs/tema4-Evaluation_Inspection.pdf "> Evaluation and Inspection Methods</a>
+                </div>
+                <p></p>
+            </section>
+            <!--The students section-->
+            <!--Each student has an avatar and info list-->
+            <section id="participants" class="central">
+                <h2 class="section-title">Participants</h2>
+                <div class="student">
+                    <img src="../images/students/1.jpg" class="avatar" alt="avatar" />
+                    <ul class="info">
+                        <li>Ivan</li>
+                        <li>Fernandez</li>
+                        <li>100383564@alumnos.uc3m.es</li>
+                        <li><a href="mailto:" style="text-decoration: none; font-size: large; color: black;">✉</a></li>
+                    </ul>
+                    <h4 class="participant-label">Student</h4>
+                </div>
+                <div class="student">
+                    <img src="../images/students/2.jpg" class="avatar" alt="avatar" />
+                    <ul class="info">
+                        <li>Manuel</li>
+                        <li>Martinez</li>
+                        <li>100947554@alumnos.uc3m.es</li>
+                        <li><a href="mailto:" style="text-decoration: none; font-size: large; color: black;">✉</a></li>
+                    </ul>
+                    <h4 class="participant-label">Student</h4>
+                </div>
+                <div class="student">
+                    <img src="../images/students/3.jpg" class="avatar" alt="avatar" />
+                    <ul class="info">
+                        <li>Greicy</li>
+                        <li>Flores</li>
+                        <li>100329140@alumnos.uc3m.es</li>
+                        <li><a href="mailto:" style="text-decoration: none; font-size: large; color: black;">✉</a></li>
+                    </ul>
+                    <h4 class="participant-label">Student</h4>
+                </div>
+                <div class="student">
+                    <img src="../images/students/4.jpg" class="avatar" alt="avatar" />
+                    <ul class="info">
+                        <li>José</li>
+                        <li>Cambronero</li>
+                        <li>100984387@alumnos.uc3m.es</li>
+                        <li><a href="mailto:" style="text-decoration: none; font-size: large; color: black;">✉</a></li>
+                    </ul>
+                    <h4 class="participant-label">Student</h4>
+                </div>
+                <div class="student">
+                    <img src="../images/students/5.jpg" class="avatar" alt="avatar" />
+                    <ul class="info">
+                        <li>Martina</li>
+                        <li>Herrero</li>
+                        <li>100324123@alumnos.uc3m.es</li>
+                        <li><a href="mailto:" style="text-decoration: none; font-size: large; color: black;">✉</a></li>
+                    </ul>
+                    <h4 class="participant-label">Teacher</h4>
+                </div>
+            </section>
+
+            <!--The work groups section-->
+            <!--Each wokr group has a list of students-->
+            <section id="groups" class="central">
+                <h2 class="section-title">Work Groups</h2>
+                <div class="group-container">
+                    <div class="group">
+                        <h4 class="group-label">Group 1</h4>
+                        <h4 class="members">Members: 2/4</h4>
+                        <a href="#" class="join-button">Join</a>
+                    </div>
+                    <ul>
+                        <li>Manuel Lopez</li>
+                        <li>Ivan Martinez</li>
+                    </ul>
+                </div>
+                <div class="group-container">
+                    <div class="group">
+                        <h4 class="group-label">Group 2</h4>
+                        <h4 class="members">Members: 1/4</h4>
+                        <a href="#" class="join-button">Join</a>
+                    </div>
+                    <ul>
+                        <li>Angel Lout</li>
+                    </ul>
+                </div>
+                <div class="group-container">
+                    <div class="group">
+                        <h4 class="group-label">Group 3</h4>
+                        <h4 class="members">Members: 0/4</h4>
+                        <a href="#" class="join-button">Join</a>
+                    </div>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="group-container">
+                    <div class="group">
+                        <h4 class="group-label">Group 4</h4>
+                        <h4 class="members">Members: 3/4</h4>
+                        <a href="#" class="join-button">Join</a>
+                    </div>
+                    <ul>
+                        <li>Carlos Comepo</li>
+                        <li>Lian Tao</li>
+                        <li>Paolo Noqui</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="col-right ">
+
+        </div>
+    </main>
+    <footer>
+        <nav class="bottom-nav ">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>eACADEMY</td>
+                        <td>Support</td>
+                    </tr>
+                    <tr>
+                        <td><a href="# ">About us</a></td>
+                        <td><a href="# ">Help Center</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="# ">Features</a></td>
+                        <td><a href="# ">FAQ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="# ">Tutorial</a></td>
+                        <td><a href="# ">Contact Us</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="# ">Pricing</a></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><a href="# ">Copyright</a></td>
+                        <td><a href="# ">Author</a></td>
+                        <td><a href="# ">Terms of service</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+    </footer>
+</body>
+
+</html>
