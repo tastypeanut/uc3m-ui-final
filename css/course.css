@@ -83,6 +83,47 @@ a {
 }
 
 
+/* Students styles */
+
+.student {
+    height: 10vh;
+    width: 90%;
+    background-color: white;
+    position: relative;
+    left: 2%;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    margin: 1% 0 2% 5%;
+    font-size: xx-large;
+}
+
+.student img {
+    height: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.student ul li {
+    margin-bottom: 0;
+    margin-left: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+.student .participant-label {
+    flex-grow: 1;
+    text-align: right;
+    padding-right: 15px;
+}
+
+
 /* Edit content button (for teacher) */
 
 .buttonEdit {
@@ -101,15 +142,16 @@ a {
     width: 25 px;
     float: right;
 }
-  
-  .buttonEdit:hover {background-color: #3e8e41}
-  
-  .buttonEdit:active {
+
+.buttonEdit:hover {
+    background-color: #3e8e41
+}
+
+.buttonEdit:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
 
 .button-submit {
     display: flex;
