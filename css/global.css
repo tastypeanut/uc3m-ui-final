@@ -1,5 +1,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #F1FAEE;
+}
+
+.col-center,
+.col-right {
+    background-color: white;
 }
 
 .header {
@@ -12,6 +18,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: 600;
 }
 
 .header a {
@@ -75,7 +82,7 @@ body {
     padding: 30px;
     text-align: center;
     color: white;
-    font-size: 24px;
+    font-size: 1.25rem;
     font-weight: 700;
     cursor: pointer;
     transition: background-color 0.25s ease-out;
