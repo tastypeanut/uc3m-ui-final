@@ -219,3 +219,8 @@ footer .bottom-nav table td {
 .form-group {
     margin-top: 20px;
 }
+
+#gradesTable {
+    width: 95%;
+    text-align: center;
+}
