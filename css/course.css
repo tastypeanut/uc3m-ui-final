@@ -109,17 +109,69 @@ h2 {
     border-radius: 10px;
 }
 
+.student .info {
+    flex-grow: 1;
+}
+
+.student ul {
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+}
+
 .student ul li {
-    margin-bottom: 0;
-    margin-left: 5%;
+    margin: auto;
+    width: auto;
+    padding: 5px;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
 }
 
-.student .participant-label {
+.student ul li:last-child {
     flex-grow: 1;
+    text-align: end;
+}
+
+.student .participant-label {
     text-align: right;
     padding-right: 15px;
+}
+
+
+/* Work Groups styles */
+
+.group {
+    width: 90%;
+    background-color: white;
+    position: relative;
+    left: 2%;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 2%;
+}
+
+.group .group-label {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.group .join-button {
+    background-color: #31587A;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 15px;
+    margin-left: 20px;
+}
+
+.group-container ul {
+    list-style-type: square;
+}
+
+.group-container li {
+    margin-bottom: 10px;
 }
 
 

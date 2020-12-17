@@ -15,6 +15,10 @@ $(document).ready(function() {
         changeCentral("#forum");
         showForum();
     });
+    $(".groups_button").click(function() {
+        changeCentral("#groups");
+        showForum();
+    });
 });
 
 //Function to change central content
