@@ -61,6 +61,14 @@ var forum = [{
     }
 ]
 $(document).ready(function() {
+
+    $('#logout').click(function(){
+        if (confirm("Are you sure you want to log out?")) {
+            localStorage.removeItem('cookie_in_use'); 
+            window.location.href = "../auth.html";
+        }
+    });
+
     //First show course
     changeCentral(".course");
 
