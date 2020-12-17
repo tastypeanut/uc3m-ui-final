@@ -46,8 +46,6 @@ $(document).ready(() => init());
 var calendar, calendarReduced;
 
 function init() {
-
-
     //This generates our "Next Events" calendar. I'm using a JQUERY plugin called FullCalendar to generate it.
     var calendarEl = document.getElementById('calendar');
     calendar = new FullCalendar.Calendar(calendarEl, {
@@ -86,9 +84,9 @@ function init() {
         initialView: 'dayGridMonth',
         initialDate: '2020-12-01',
         headerToolbar: {
-            left: 'prev,next today',
+            left: false,
             center: 'title',
-            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+            right: false
         },
         events: [
             {
@@ -115,7 +113,7 @@ function init() {
     calendarReduced.render();
 
 
-    $(".CALENDAR_ACTION").click(function () {
+    $("#calendarRed").click(function () {
 
         var popup_height = window.innerHeight * 0.5;
         var popup_width = window.innerWidth * 0.5;
