@@ -1,27 +1,27 @@
 var editing;
 $(document).ready(function() {
     //First show course
-    changeCentral("#course");
+    changeCentral(".course");
 
     //Changeing of central container
     $(".course_button").click(function() {
-        changeCentral("#course");
+        changeCentral(".course");
         showForum();
     });
     $(".participants_button").click(function() {
-        changeCentral("#participants");
+        changeCentral(".participants");
         showForum();
     });
     $(".forum_button").click(function() {
-        changeCentral("#forum");
+        changeCentral(".forum");
         showForum();
     });
     $(".groups_button").click(function() {
-        changeCentral("#groups");
+        changeCentral(".groups");
         showForum();
     });
     $(".grades_button").click(function() {
-        changeCentral("#grades");
+        changeCentral(".grades");
         showForum();
     });
 });

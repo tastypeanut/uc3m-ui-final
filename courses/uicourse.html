@@ -51,7 +51,13 @@
             <a href=" XXXX"><img src="../images/profile.png" height="55"></a>
         </div>
     </div>
-    <div class="breadcrumb"><a href="../main/main-student.html">Courses</a><a class="course_button" href="#">User Interfaces</a></div>
+    <div class="breadcrumb">
+        <a href="../main/main-student.html">Courses</a>
+        <a class="course_button" href="#">User Interfaces</a>
+        <a class="central participants">Participants</a>
+        <a class="central grades">Grades</a>
+        <a class="central groups">Work groups</a>
+    </div>
     <main>
         <div class="col-left">
             <button class="button button1 course_button">Contents</button>
@@ -61,7 +67,7 @@
             <button class="button button1 groups_button">Work Groups</button>
         </div>
         <div class="col-center-course">
-            <section id="course" class="central">
+            <section class="central course">
                 <button class="button buttonEdit" onclick="$( '.edit-popup').show(); editing = 'class'">Edit content</button>
 
                 <h2>Online Class</h2>
@@ -187,7 +193,7 @@
             </section>
             <!--The students section-->
             <!--Each student has an avatar and info list-->
-            <section id="participants" class="central">
+            <section class="central participants">
                 <h2 class="section-title">Participants</h2>
                 <div class="student">
                     <img src="../images/students/1.jpg" class="avatar" alt="avatar" />
@@ -241,103 +247,123 @@
                 </div>
             </section>
 
-            <section id="grades" class="central">
+            <section class="central grades">
                 <h2 class="section-title">Grades</h2>
-                <table id="gradesTable">
-                    <tr>
-                        <th>Name</th>
-                        <th>Problem 1</th>
-                        <th>Theory test</th>
-                        <th>Problem 2</th>
-                        <th>Final exam</th>
-                        <th>TOTAL</th>
-                    </tr>
-                    <tr>
-                        <td>María Iglesias Fernández</td>
-                        <td>8</td>
-                        <td>6</td>
-                        <td>7.75</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Cristina Sanz Camino</td>
-                        <td>3</td>
-                        <td>6</td>
-                        <td>4</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Francisco Corrales Cano</td>
-                        <td>-</td>
-                        <td>8</td>
-                        <td>8.5</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Ernesto Pérez Pérez</td>
-                        <td>9</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Irene Osorio Camino</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>8.75</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Laura Sánchez García</td>
-                        <td>5</td>
-                        <td>6.5</td>
-                        <td>5</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Pedro Valverde Osuna</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Malena Mangas Garcés</td>
-                        <td>7</td>
-                        <td>7</td>
-                        <td>6.5</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Gonzalo Gandoy Hernández</td>
-                        <td>8</td>
-                        <td>7.25</td>
-                        <td>9</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Javier Centeno Martín</td>
-                        <td>4</td>
-                        <td>6</td>
-                        <td>6</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
+                <div id="teacher" style="display:none;">
+                    <table id="gradesTable">
+                        <tr>
+                            <th>Name</th>
+                            <th>Problem 1</th>
+                            <th>Theory test</th>
+                            <th>Problem 2</th>
+                            <th>Final exam</th>
+                            <th>TOTAL</th>
+                        </tr>
+                        <tr>
+                            <td>María Iglesias Fernández</td>
+                            <td>8</td>
+                            <td>6</td>
+                            <td>7.75</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Cristina Sanz Camino</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Corrales Cano</td>
+                            <td>-</td>
+                            <td>8</td>
+                            <td>8.5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ernesto Pérez Pérez</td>
+                            <td>9</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Irene Osorio Camino</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>8.75</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Laura Sánchez García</td>
+                            <td>5</td>
+                            <td>6.5</td>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Pedro Valverde Osuna</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Malena Mangas Garcés</td>
+                            <td>7</td>
+                            <td>7</td>
+                            <td>6.5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gonzalo Gandoy Hernández</td>
+                            <td>8</td>
+                            <td>7.25</td>
+                            <td>9</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Javier Centeno Martín</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>6</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="student">
+                    <table id="gradesTable">
+                        <tr>
+                            <th>Problem 1</th>
+                            <th>Theory test</th>
+                            <th>Problem 2</th>
+                            <th>Final exam</th>
+                            <th>TOTAL</th>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>10</td>
+                            <td>7.75</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
 
             <!--The work groups section-->
             <!--Each wokr group has a list of students-->
-            <section id="groups" class="central">
+            <section class="central groups">
                 <h2 class="section-title">Work Groups</h2>
                 <div class="group-container">
                     <div class="group">
