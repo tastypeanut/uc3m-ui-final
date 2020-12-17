@@ -8,9 +8,16 @@ if (cookie_in_use == null || getCookie(cookie_in_use) == null || JSON.parse(atob
 }*/
 
 $(document).ready(function() {
+    $('#logout').click(function(){
+        if (confirm("Are you sure you want to log out?")) {
+            localStorage.removeItem('cookie_in_use'); 
+            window.location.href = "../auth.html";
+        }
+    });
+
     //First show course
     changeCentral("#events");
-
+    
     //Changeing of central container
     $(".buttonHome").click(function() {
         changeCentral("#events");
