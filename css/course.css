@@ -204,6 +204,9 @@ h2 {
     transform: translateY(4px);
 }
 
+
+/* Edit Popup */
+
 .button-submit {
     display: flex;
     justify-content: center;
@@ -237,4 +240,36 @@ input[type=file] {
     padding-left: 10px;
     font-size: 16px;
     font-weight: 600;
+}
+
+
+/* Table of the grades */
+
+#gradesTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+#gradesTable td,
+#gradesTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#gradesTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#gradesTable tr:hover {
+    background-color: #ddd;
+}
+
+#gradesTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #457B9D;
+    color: white;
 }

@@ -18,158 +18,170 @@
 <body onload="$('.edit-popup').hide();">
     <div class="popup edit-popup">
         <div class="popup-bg" onclick="$('.edit-popup').hide();"></div>
-        <div class=" popup-content ">
-            <div class="add-element ">
+        <div class=" popup-content">
+            <div class="add-element">
                 <h2>Add content</h2>
-                <div class="form-group ">
+                <div class="form-group">
                     <h4>Type</h4>
-                    <select>
-                        <option value="pdf ">PDF</option>
-                        <option value="image ">Unit</option>
-                        <option value="pdf ">Assignment</option>
+                    <select id="edit-select">
+                        <option value="PDF.svg">PDF</option>
+                        <option value="assignment.png">Assignment</option>
                     </select>
                 </div>
-                <div class="form-group ">
+                <div class="form-group">
                     <h4>Title</h4>
-                    <input type="text" placeholder="Title " />
+                    <input type="text" id="edit-title" placeholder="Title" />
                 </div>
-                <div class="form-group ">
+                <div class="form-group">
                     <h4>File</h4>
-                    <input type="file" id="myFile " name="filename ">
+                    <input type="file" id="myFile" name="filename">
                 </div>
-                <div class="form-group button-submit ">
-                    <a href="#" onclick="$( '.edit-popup').hide(); ">Add to course</a>
+                <div class="form-group button-submit">
+                    <a href="#" onclick="edit()">Add to course</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="header ">
-        <img src="../images/logo.png " height="60 ">
-        <div class="header-right ">
-            <a class="active " href=" XXXX ">Home</a>
-            <a href=" XXXX ">Messages</a>
-            <a href=" XXXX ">Log out</a>
-            <a href=" XXXX "><img src="../images/profile.png " height="55 "></a>
+    <div class="header">
+        <img src="../images/logo.png" height="60">
+        <div class="header-right">
+            <a class="active" href=" XXXX">Home</a>
+            <a href=" XXXX">Messages</a>
+            <a href=" XXXX">Log out</a>
+            <a href=" XXXX"><img src="../images/profile.png" height="55"></a>
         </div>
     </div>
-    <div class="breadcrumb "><a href="../main/main-student.html">Courses</a><a class="course_button" href="#">User Interfaces</a></div>
+    <div class="breadcrumb"><a href="../main/main-student.html">Courses</a><a class="course_button" href="#">User Interfaces</a></div>
     <main>
-        <div class="col-left ">
+        <div class="col-left">
             <button class="button button1 course_button">Contents</button>
             <button class="button button1">Forum</button>
             <button class="button button1 participants_button">Participants</button>
-            <button class="button button1 ">Grades</button>
+            <button class="button button1 grades_button">Grades</button>
             <button class="button button1 groups_button">Work Groups</button>
         </div>
         <div class="col-center-course">
             <section id="course" class="central">
-                <button class="button buttonEdit " onclick="$( '.edit-popup').show(); ">Edit content</button>
+                <button class="button buttonEdit" onclick="$( '.edit-popup').show(); editing = 'class'">Edit content</button>
 
                 <h2>Online Class</h2>
-                <div class="item-container ">
-                    <img class="icon " src="../images/puzle.svg ">
-                    <a href="https://eu-lti.bbcollab.com/collab/ui/scheduler/session "> Classroom [2020/21] M2.218.13882-89 MAG. User Interfaces 20/21-S1</a>
+                <div id="class">
+                    <div class="item-container">
+                        <img class="icon" src="../images/puzle.svg">
+                        <a href="https://eu-lti.bbcollab.com/collab/ui/scheduler/session"> Classroom [2020/21] M2.218.13882-89 MAG. User Interfaces 20/21-S1</a>
+                    </div>
                 </div>
                 <p></p>
 
+                <button class="button buttonEdit" onclick="$( '.edit-popup').show(); editing = 'topic1'">Edit content</button>
                 <h2>TOPIC 1</h2>
-                <h1 class="title ">The Human-Computer Interaction</h1>
+                <h1 class="title">The Human-Computer Interaction</h1>
+                <div id="topic1">
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/Introduction to Human-Computer Interaction.pdf"> Introduction to Human-Computer Interaction</a>
+                    </div>
+                    <p></p>
 
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/Introduction to Human-Computer Interaction.pdf "> Introduction to Human-Computer Interaction</a>
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/Exercise1-NormanModel.pdf"> Exercise - Norman Model</a>
+                    </div>
+                    <p></p>
+
+                    <div class="item-container">
+                        <img class="icon" src="../images/assignment.png" class="icon">
+                        <a> Exercise Submission - Norman Model</a>
+                    </div>
                 </div>
                 <p></p>
 
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/Exercise1-NormanModel.pdf "> Exercise - Norman Model</a>
+                <div class="item-container">
+                    <img class="icon" src="../images/pdf.svg">
+                    <a href="../pdfs/Norman model - solution.pdf"> Solution - Norman Model</a>
                 </div>
                 <p></p>
 
-                <div class="item-container ">
-                    <img class="icon " src="../images/assignment.png " class="icon ">
-                    <a> Exercise Submission - Norman Model</a>
-                </div>
-                <p></p>
-
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/Norman model - solution.pdf "> Solution - Norman Model</a>
-                </div>
-                <p></p>
-
+                <button class="button buttonEdit" onclick="$( '.edit-popup').show(); editing = 'topic2'">Edit content</button>
                 <h2>TOPIC 2</h2>
-                <h1 class="title ">The User Interface</h1>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema2-1-UserInterface-Publish.pdf "> Introduction to the User Interface</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema2-2-Usability-Publish.pdf "> The Usability</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema2-3-Methodology.pdf "> The Methodology</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema2-4-Accessibility.pdf "> The Accessibility</a>
+                <h1 class="title">The User Interface</h1>
+                <div id="topic2">
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema2-1-UserInterface-Publish.pdf"> Introduction to the User Interface</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema2-2-Usability-Publish.pdf"> The Usability</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema2-3-Methodology.pdf"> The Methodology</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema2-4-Accessibility.pdf"> The Accessibility</a>
+                    </div>
                 </div>
                 <p></p>
 
+                <button class="button buttonEdit" onclick="$( '.edit-popup').show(); editing = 'topic3'">Edit content</button>
                 <h2>TOPIC 3</h2>
-                <h1 class="title ">The Web Design</h1>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema3-1-WebDesign.pdf "> Introduction to Web Design</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema3-2-WebPrinciples.pdf "> The Web Design Principles</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema3-WebDesignPatternsbyVanDuyne.pdf "> The Web Design Patterns by Van Duyne</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema3-WebDesignPatternsbyVanDuyne-Example.pdf "> The Web Design Patterns by Van Duyne - Example</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/assignment.png " class="icon ">
-                    <a> Exercise about Design Patterns and Heuristics</a>
+                <h1 class="title">The Web Design</h1>
+                <div id="topic3">
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema3-1-WebDesign.pdf"> Introduction to Web Design</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema3-2-WebPrinciples.pdf"> The Web Design Principles</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema3-WebDesignPatternsbyVanDuyne.pdf"> The Web Design Patterns by Van Duyne</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema3-WebDesignPatternsbyVanDuyne-Example.pdf"> The Web Design Patterns by Van Duyne - Example</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/assignment.png" class="icon">
+                        <a> Exercise about Design Patterns and Heuristics</a>
+                    </div>
                 </div>
                 <p></p>
 
+                <button class="button buttonEdit" onclick="$( '.edit-popup').show(); editing = 'topic4'">Edit content</button>
                 <h2>TOPIC 4</h2>
-                <h1 class="title ">The Interaction with User Interfaces</h1>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema4-Requirements_and_Interaction_models.pdf "> Designing the User Interfaces</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/word.png ">
-                    <a href="../pdfs/GOMSExEn.docx "> Exercise - HTA & GOMS</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/assignment.png " class="icon ">
-                    <a> Exercise Submission - HTA & GOMS</a>
-                </div>
-                <p></p>
-                <div class="item-container ">
-                    <img class="icon " src="../images/pdf.svg ">
-                    <a href="../pdfs/tema4-Evaluation_Inspection.pdf "> Evaluation and Inspection Methods</a>
+                <h1 class="title">The Interaction with User Interfaces</h1>
+                <div id="topic4">
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema4-Requirements_and_Interaction_models.pdf"> Designing the User Interfaces</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/word.png">
+                        <a href="../pdfs/GOMSExEn.docx"> Exercise - HTA & GOMS</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/assignment.png" class="icon">
+                        <a> Exercise Submission - HTA & GOMS</a>
+                    </div>
+                    <p></p>
+                    <div class="item-container">
+                        <img class="icon" src="../images/pdf.svg">
+                        <a href="../pdfs/tema4-Evaluation_Inspection.pdf"> Evaluation and Inspection Methods</a>
+                    </div>
                 </div>
                 <p></p>
             </section>
@@ -229,6 +241,100 @@
                 </div>
             </section>
 
+            <section id="grades" class="central">
+                <h2 class="section-title">Grades</h2>
+                <table id="gradesTable">
+                    <tr>
+                        <th>Name</th>
+                        <th>Problem 1</th>
+                        <th>Theory test</th>
+                        <th>Problem 2</th>
+                        <th>Final exam</th>
+                        <th>TOTAL</th>
+                    </tr>
+                    <tr>
+                        <td>María Iglesias Fernández</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>7.75</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Cristina Sanz Camino</td>
+                        <td>3</td>
+                        <td>6</td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Francisco Corrales Cano</td>
+                        <td>-</td>
+                        <td>8</td>
+                        <td>8.5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Ernesto Pérez Pérez</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Irene Osorio Camino</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>8.75</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Laura Sánchez García</td>
+                        <td>5</td>
+                        <td>6.5</td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Pedro Valverde Osuna</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Malena Mangas Garcés</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>6.5</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Gonzalo Gandoy Hernández</td>
+                        <td>8</td>
+                        <td>7.25</td>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Javier Centeno Martín</td>
+                        <td>4</td>
+                        <td>6</td>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </section>
+
             <!--The work groups section-->
             <!--Each wokr group has a list of students-->
             <section id="groups" class="central">
@@ -277,12 +383,12 @@
                 </div>
             </section>
         </div>
-        <div class="col-right ">
+        <div class="col-right">
 
         </div>
     </main>
     <footer>
-        <nav class="bottom-nav ">
+        <nav class="bottom-nav">
             <table>
                 <tbody>
                     <tr>
@@ -290,19 +396,19 @@
                         <td>Support</td>
                     </tr>
                     <tr>
-                        <td><a href="# ">About us</a></td>
-                        <td><a href="# ">Help Center</a></td>
+                        <td><a href="#">About us</a></td>
+                        <td><a href="#">Help Center</a></td>
                     </tr>
                     <tr>
-                        <td><a href="# ">Features</a></td>
-                        <td><a href="# ">FAQ</a></td>
+                        <td><a href="#">Features</a></td>
+                        <td><a href="#">FAQ</a></td>
                     </tr>
                     <tr>
-                        <td><a href="# ">Tutorial</a></td>
-                        <td><a href="# ">Contact Us</a></td>
+                        <td><a href="#">Tutorial</a></td>
+                        <td><a href="#">Contact Us</a></td>
                     </tr>
                     <tr>
-                        <td><a href="# ">Pricing</a></td>
+                        <td><a href="#">Pricing</a></td>
                         <td></td>
                     </tr>
                     <tr>
@@ -314,9 +420,9 @@
             <table>
                 <tbody>
                     <tr>
-                        <td><a href="# ">Copyright</a></td>
-                        <td><a href="# ">Author</a></td>
-                        <td><a href="# ">Terms of service</a></td>
+                        <td><a href="#">Copyright</a></td>
+                        <td><a href="#">Author</a></td>
+                        <td><a href="#">Terms of service</a></td>
                     </tr>
                 </tbody>
             </table>
