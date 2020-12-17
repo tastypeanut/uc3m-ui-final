@@ -13,41 +13,6 @@ main {
 }
 
 
-/* Left column */
-
-.col-left {
-    margin-left: 1.75%;
-    margin-right: 1.75%;
-}
-
-.button {
-    background-color: #4CAF50;
-    /* Green */
-    border: 1px black;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    padding: 15px 32px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    width: 100%;
-}
-
-.button1 {
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50;
-}
-
-.button1:hover {
-    background-color: #4CAF50;
-    color: white;
-}
-
-
 /* Center column */
 
 .col-center {
@@ -123,8 +88,10 @@ main {
     margin-left: 68%;
 }
 
+
 /* Right column */
-.col-right{
+
+.col-right {
     padding: 2% 1%;
     margin-right: 1.75%;
     margin-left: 1.75%;
@@ -136,22 +103,25 @@ main {
     /*align-items: center;*/
 }
 
- /*CALENDAR & NEXT EVENTS STYLING*/
- #calendar *{
+
+/*CALENDAR & NEXT EVENTS STYLING*/
+
+#calendar * {
     float: initial;
 }
 
-#calendarRed{
+#calendarRed {
     height: 500px;
     width: 100%;
     margin-bottom: 15%;
 }
 
- .CALENDAR_ACTION {
+.CALENDAR_ACTION {
     color: blue;
     text-decoration: underline;
     cursor: pointer;
 }
+
 
 /*
                                      _           
@@ -169,6 +139,7 @@ main {
 
 */
 
+
 /*
 Note: responsive sizing will be stated in this order:
 
@@ -182,23 +153,22 @@ The disable class allows us to control exactly what we want to display on each v
 It gives us a very granular control of what is displayed.
 
 */
+
+
 /*
 [class*="col-"] {
     float: left;
     padding: 2%;
 }*/
-  
+
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
-  
-  
-  
-  
-  
-  /*
+
+
+/*
    ____  _                           
   |  _ \| |__   ___  _ __   ___  ___ 
   | |_) | '_ \ / _ \| '_ \ / _ \/ __|
@@ -206,39 +176,54 @@ It gives us a very granular control of what is displayed.
   |_|   |_| |_|\___/|_| |_|\___||___/
    
   */
-  
-  
-  
-  @media only screen and (max-width: 599px){
-  
-      .phone-disabled{display: none;}
-  
-      [class*="col-"]{
+
+@media only screen and (max-width: 599px) {
+    .phone-disabled {
+        display: none;
+    }
+    [class*="col-"] {
         width: 100%;
-      }
-  
-      .col-p-1 {width: 8.33%;}
-      .col-p-2 {width: 16.66%;}
-      .col-p-3 {width: 25%;}
-      .col-p-4 {width: 33.33%;}
-      .col-p-5 {width: 41.66%;}
-      .col-p-6 {width: 50%;}
-      .col-p-7 {width: 58.33%;}
-      .col-p-8 {width: 66.66%;}
-      .col-p-9 {width: 75%;}
-      .col-p-10 {width: 83.33%;}
-      .col-p-11 {width: 91.66%;}
-      .col-p-12 {width: 100%;}
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  /*
+    }
+    .col-p-1 {
+        width: 8.33%;
+    }
+    .col-p-2 {
+        width: 16.66%;
+    }
+    .col-p-3 {
+        width: 25%;
+    }
+    .col-p-4 {
+        width: 33.33%;
+    }
+    .col-p-5 {
+        width: 41.66%;
+    }
+    .col-p-6 {
+        width: 50%;
+    }
+    .col-p-7 {
+        width: 58.33%;
+    }
+    .col-p-8 {
+        width: 66.66%;
+    }
+    .col-p-9 {
+        width: 75%;
+    }
+    .col-p-10 {
+        width: 83.33%;
+    }
+    .col-p-11 {
+        width: 91.66%;
+    }
+    .col-p-12 {
+        width: 100%;
+    }
+}
+
+
+/*
    _____     _     _      _       
   |_   _|_ _| |__ | | ___| |_ ___ 
     | |/ _` | '_ \| |/ _ \ __/ __|
@@ -246,33 +231,51 @@ It gives us a very granular control of what is displayed.
     |_|\__,_|_.__/|_|\___|\__|___/
   
   */
-  @media only screen and (min-width: 600px) and (max-width: 850px){
-    
-      .col-s-1 {width: 8.33%;}
-      .col-s-2 {width: 16.66%;}
-      .col-s-3 {width: 25%;}
-      .col-s-4 {width: 33.33%;}
-      .col-s-5 {width: 41.66%;}
-      .col-s-6 {width: 50%;}
-      .col-s-7 {width: 58.33%;}
-      .col-s-8 {width: 66.66%;}
-      .col-s-9 {width: 75%;}
-      .col-s-10 {width: 83.33%;}
-      .col-s-11 {width: 91.66%;}
-      .col-s-12 {width: 100%;}
-      .tablet-disabled{display: none;}
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*
+
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+    .tablet-disabled {
+        display: none;
+    }
+}
+
+
+/*
    _                _                  
   | |    __ _ _ __ | |_ ___  _ __  ___ 
   | |   / _` | '_ \| __/ _ \| '_ \/ __|
@@ -281,20 +284,45 @@ It gives us a very granular control of what is displayed.
              |_|            |_|        
   
   */
-  @media only screen and (min-width: 850px) {
-    
-      .col-1 {width: 8.33%;}
-      .col-2 {width: 16.66%;}
-      .col-3 {width: 25%;}
-      .col-4 {width: 33.33%;}
-      .col-5 {width: 41.66%;}
-      .col-6 {width: 50%;}
-      .col-7 {width: 58.33%;}
-      .col-8 {width: 66.66%;}
-      .col-9 {width: 75%;}
-      .col-10 {width: 83.33%;}
-      .col-11 {width: 91.66%;}
-      .col-12 {width: 100%;}
-      .laptop-disabled{display: none;}
-  
-  }
+
+@media only screen and (min-width: 850px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .laptop-disabled {
+        display: none;
+    }
+}

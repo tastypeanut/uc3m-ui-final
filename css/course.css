@@ -12,9 +12,6 @@ main {
     display: flex;
 }
 
-
-
-
 .button {
     background-color: #4CAF50;
     /* Green */
@@ -46,7 +43,7 @@ main {
 /* Center column (Course) */
 
 .col-center-course {
-    padding: 40px 20px;
+    padding: 40px 60px;
     margin-right: 1.75%;
     margin-left: 1.75%;
     border: 1px solid lightblue;
@@ -54,10 +51,10 @@ main {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 
-.col-right{
+.col-right {
     padding: 2% 1%;
     margin-right: 1.75%;
     margin-left: 1.75%;
@@ -88,6 +85,7 @@ main {
     margin-left: 15px;
 }
 
+
 /*Left Column*/
 
 .col-left {
@@ -95,15 +93,17 @@ main {
     margin-right: 1.75%;
 }
 
- /*CALENDAR & NEXT EVENTS STYLING*/
- #calendar *{
+
+/*CALENDAR & NEXT EVENTS STYLING*/
+
+#calendar * {
     float: initial;
 }
 
-#calendarRed{
-   height: 500px;
-   width: 100%;
-   margin-bottom: 15%;
+#calendarRed {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 15%;
 }
 
 
@@ -211,20 +211,20 @@ h2 {
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #31587A;
     border: none;
     border-radius: 8px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 4px #1D3557;
     width: 25 px;
     float: right;
 }
 
 .buttonEdit:hover {
-    background-color: #3e8e41
+    background-color: #31587A
 }
 
 .buttonEdit:active {
-    background-color: #3e8e41;
+    background-color: #31587A;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -378,6 +378,7 @@ input[type=file] {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
+
 /*
                                      _           
  _ __ ___  ___ _ __   ___  _ __  ___(_)_   _____ 
@@ -394,6 +395,7 @@ input[type=file] {
 
 */
 
+
 /*
 Note: responsive sizing will be stated in this order:
 
@@ -407,23 +409,22 @@ The disable class allows us to control exactly what we want to display on each v
 It gives us a very granular control of what is displayed.
 
 */
+
+
 /*
 [class*="col-"] {
     float: left;
     padding: 2%;
 }*/
-  
+
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
-  
-  
-  
-  
-  
-  /*
+
+
+/*
    ____  _                           
   |  _ \| |__   ___  _ __   ___  ___ 
   | |_) | '_ \ / _ \| '_ \ / _ \/ __|
@@ -431,39 +432,54 @@ It gives us a very granular control of what is displayed.
   |_|   |_| |_|\___/|_| |_|\___||___/
    
   */
-  
-  
-  
-  @media only screen and (max-width: 599px){
-  
-      .phone-disabled{display: none;}
-  
-      [class*="col-"]{
+
+@media only screen and (max-width: 599px) {
+    .phone-disabled {
+        display: none;
+    }
+    [class*="col-"] {
         width: 100%;
-      }
-  
-      .col-p-1 {width: 8.33%;}
-      .col-p-2 {width: 16.66%;}
-      .col-p-3 {width: 25%;}
-      .col-p-4 {width: 33.33%;}
-      .col-p-5 {width: 41.66%;}
-      .col-p-6 {width: 50%;}
-      .col-p-7 {width: 58.33%;}
-      .col-p-8 {width: 66.66%;}
-      .col-p-9 {width: 75%;}
-      .col-p-10 {width: 83.33%;}
-      .col-p-11 {width: 91.66%;}
-      .col-p-12 {width: 100%;}
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  /*
+    }
+    .col-p-1 {
+        width: 8.33%;
+    }
+    .col-p-2 {
+        width: 16.66%;
+    }
+    .col-p-3 {
+        width: 25%;
+    }
+    .col-p-4 {
+        width: 33.33%;
+    }
+    .col-p-5 {
+        width: 41.66%;
+    }
+    .col-p-6 {
+        width: 50%;
+    }
+    .col-p-7 {
+        width: 58.33%;
+    }
+    .col-p-8 {
+        width: 66.66%;
+    }
+    .col-p-9 {
+        width: 75%;
+    }
+    .col-p-10 {
+        width: 83.33%;
+    }
+    .col-p-11 {
+        width: 91.66%;
+    }
+    .col-p-12 {
+        width: 100%;
+    }
+}
+
+
+/*
    _____     _     _      _       
   |_   _|_ _| |__ | | ___| |_ ___ 
     | |/ _` | '_ \| |/ _ \ __/ __|
@@ -471,33 +487,51 @@ It gives us a very granular control of what is displayed.
     |_|\__,_|_.__/|_|\___|\__|___/
   
   */
-  @media only screen and (min-width: 600px) and (max-width: 850px){
-    
-      .col-s-1 {width: 8.33%;}
-      .col-s-2 {width: 16.66%;}
-      .col-s-3 {width: 25%;}
-      .col-s-4 {width: 33.33%;}
-      .col-s-5 {width: 41.66%;}
-      .col-s-6 {width: 50%;}
-      .col-s-7 {width: 58.33%;}
-      .col-s-8 {width: 66.66%;}
-      .col-s-9 {width: 75%;}
-      .col-s-10 {width: 83.33%;}
-      .col-s-11 {width: 91.66%;}
-      .col-s-12 {width: 100%;}
-      .tablet-disabled{display: none;}
-  
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  /*
+
+@media only screen and (min-width: 600px) and (max-width: 850px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+    .tablet-disabled {
+        display: none;
+    }
+}
+
+
+/*
    _                _                  
   | |    __ _ _ __ | |_ ___  _ __  ___ 
   | |   / _` | '_ \| __/ _ \| '_ \/ __|
@@ -506,20 +540,45 @@ It gives us a very granular control of what is displayed.
              |_|            |_|        
   
   */
-  @media only screen and (min-width: 850px) {
-    
-      .col-1 {width: 8.33%;}
-      .col-2 {width: 16.66%;}
-      .col-3 {width: 25%;}
-      .col-4 {width: 33.33%;}
-      .col-5 {width: 41.66%;}
-      .col-6 {width: 50%;}
-      .col-7 {width: 58.33%;}
-      .col-8 {width: 66.66%;}
-      .col-9 {width: 75%;}
-      .col-10 {width: 83.33%;}
-      .col-11 {width: 91.66%;}
-      .col-12 {width: 100%;}
-      .laptop-disabled{display: none;}
-  
-  }
+
+@media only screen and (min-width: 850px) {
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .laptop-disabled {
+        display: none;
+    }
+}
