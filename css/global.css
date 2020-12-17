@@ -53,6 +53,43 @@ body {
 }
 
 
+/* Left column */
+
+.col-left {
+    padding: 0;
+    margin-left: 1.75%;
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 8px rgba(61, 59, 175, 0.288);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    height: -moz-fit-content;
+    overflow: hidden;
+    width: 15vw;
+}
+
+.col-left .button {
+    width: 100%;
+    background-color: #31587A;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s ease-out;
+}
+
+.col-left .button:hover {
+    background-color: #1D3557;
+}
+
+.col-left .button:not(:last-child) {
+    border-bottom: 1px solid #1D3557;
+}
+
+
 /* Style the footer */
 
 footer {
