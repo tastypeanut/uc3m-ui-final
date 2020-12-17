@@ -1,9 +1,9 @@
 
-$(document).ready(() => init2());
+$(document).ready(() => init());
 
 var calendar, calendarReduced;
 
-function init2() {
+function init() {
 
 
     //This generates our "Next Events" calendar. I'm using a JQUERY plugin called FullCalendar to generate it.
