@@ -35,13 +35,13 @@ main {
     padding: 15px 32px;
     transition-duration: 0.4s;
     cursor: pointer;
-    width: 100%;
 }
 
 .button1 {
     background-color: white;
     color: black;
     border: 2px solid #4CAF50;
+    width: 100%;
 }
 
 .button1:hover {
@@ -80,4 +80,32 @@ a {
     align-items: center;
     margin-bottom: 20px;
     margin-left: 15px;
+}
+
+
+/* Edit content button (for teacher) */
+
+.buttonEdit {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 9px #999;
+    width: 25 px;
+    float: right;
+}
+  
+  .buttonEdit:hover {background-color: #3e8e41}
+  
+  .buttonEdit:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
