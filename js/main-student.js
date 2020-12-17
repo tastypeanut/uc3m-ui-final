@@ -114,7 +114,6 @@ function init() {
 
 
     $("#calendarRed").click(function () {
-
         var popup_height = window.innerHeight * 0.5;
         var popup_width = window.innerWidth * 0.5;
         $("#calendar").dialog({ autoOpen: false, height: popup_height, width: popup_width, modal: true, position: { my: "top", at: "top", of: "main" } });
