@@ -1,49 +1,118 @@
 var courses = [{
-        name: "Mathematics",
-        professor: "Mathin Br",
-        topics: [{
-                name: "topic 1"
-            },
-            {
-                name: "topic 2"
-            }
-        ]
+    name: "Mathematics",
+    professor: "Mathin Br",
+    topics: [{
+        name: "topic 1"
     },
     {
-        name: "Mathematics2",
-        professor: "Mathin Br",
-        topics: [{
-                name: "topic 1"
-            },
-            {
-                name: "topic 2"
-            }
-        ]
-    },
-    {
-        name: "Mathematics3",
-        professor: "Mathin Br",
-        topics: [{
-                name: "topic 1"
-            },
-            {
-                name: "topic 2"
-            }
-        ]
+        name: "topic 2"
     }
+    ]
+},
+{
+    name: "Mathematics2",
+    professor: "Mathin Br",
+    topics: [{
+        name: "topic 1"
+    },
+    {
+        name: "topic 2"
+    }
+    ]
+},
+{
+    name: "Mathematics3",
+    professor: "Mathin Br",
+    topics: [{
+        name: "topic 1"
+    },
+    {
+        name: "topic 2"
+    }
+    ]
+}
 ];
 
 $(document).ready(() => init());
 
-function init() {}
+var calendar, calendarReduced;
 
-// function showCourseList() {
-//     var center = $("#course-list");
-//     console.log(center);
-//     center.empty();
-//     //Show all rows
-//     courses.forEach((course) => {
-//         const markup = ``;
-//         center.append(markup);
-//     });
-// }
+function init() {
+
+
+    //This generates our "Next Events" calendar. I'm using a JQUERY plugin called FullCalendar to generate it.
+    var calendarEl = document.getElementById('calendar');
+    calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        initialDate: '2020-12-01',
+        headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+        events: [
+            {
+                title: 'Final practice delivery',
+                start: '2020-12-18'
+            },
+            {
+                title: 'Third mini-test opens',
+                start: '2020-12-21T10:30:00',
+                end: '2020-12-21T12:30:00'
+            },
+            {
+                title: '2º Partial exam',
+                start: '2020-12-24T12:30:00',
+                end: '2020-12-24T14:00:00'
+            },
+            {
+                title: 'Ordinary exam',
+                start: '2021-01-13T16:30:00',
+                end: '2021-01-13T18:30:00'
+            }
+        ]
+    });
+
+    var calendarElred = document.getElementById('calendarRed');
+    calendarReduced = new FullCalendar.Calendar(calendarElred, {
+        initialView: 'dayGridMonth',
+        initialDate: '2020-12-01',
+        headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+        },
+        events: [
+            {
+                title: 'Final practice delivery',
+                start: '2020-12-18'
+            },
+            {
+                title: 'Third mini-test opens',
+                start: '2020-12-21T10:30:00',
+                end: '2020-12-21T12:30:00'
+            },
+            {
+                title: '2º Partial exam',
+                start: '2020-12-24T12:30:00',
+                end: '2020-12-24T14:00:00'
+            },
+            {
+                title: 'Ordinary exam',
+                start: '2021-01-13T16:30:00',
+                end: '2021-01-13T18:30:00'
+            }
+        ]
+    });
+    calendarReduced.render();
+
+
+    $(".CALENDAR_ACTION").click(function () {
+
+        var popup_height = window.innerHeight * 0.5;
+        var popup_width = window.innerWidth * 0.5;
+        $("#calendar").dialog({ autoOpen: false, height: popup_height, width: popup_width, modal: true, position: { my: "top", at: "top", of: "main" } });
+        $("#calendar").dialog("open");
+        calendar.render();
+    });
+}

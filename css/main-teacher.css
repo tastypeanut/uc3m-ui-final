@@ -126,3 +126,25 @@ main {
     margin: auto;
     margin-left: 68%;
 }
+
+/* Right column */
+.col-right{
+    width: 22vw;
+    margin-right: 2vw;
+}
+
+ /*CALENDAR & NEXT EVENTS STYLING*/
+ #calendar *{
+    float: initial;
+}
+
+#calendarRed{
+   zoom: 75%;
+   height: 500px;
+}
+
+ .CALENDAR_ACTION {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}

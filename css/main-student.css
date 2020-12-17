@@ -96,7 +96,7 @@ main {
     justify-content: space-around;
     height: 100%;
     border-left: 1px solid #1d355727;
-    padding-left: 20px;
+    padding-left: 20px;¡`ki                            z 
     flex-grow: 1;
     background-color: #F1FAEE;
 }
@@ -125,3 +125,27 @@ main {
     margin: auto;
     margin-left: 68%;
 }
+
+/* Right column */
+.col-right{
+    width: 22vw;
+    margin-right: 2vw;
+}
+
+  
+  
+  /*CALENDAR & NEXT EVENTS STYLING*/
+  #calendar *{
+      float: initial;
+  }
+
+ #calendarRed{
+     zoom: 75%;
+     height: 500px;
+ }
+  
+   .CALENDAR_ACTION {
+      color: blue;
+      text-decoration: underline;
+      cursor: pointer;
+  }
