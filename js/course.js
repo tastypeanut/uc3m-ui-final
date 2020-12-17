@@ -1,4 +1,65 @@
 var editing;
+var user;
+
+function randomDate(start, end) {
+    return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+}
+var forum = [{
+        title: "Help with topic 1",
+        messages: [{
+            sender: {
+                img: '../images/students/1.jpg',
+                fullname: 'Ivan Fernandez'
+            },
+            date: randomDate(new Date(2012, 0, 1), new Date()),
+            message: "I need help"
+        }]
+    },
+    {
+        title: "Is this correct?",
+        messages: [{
+            sender: {
+                img: '../images/students/2.jpg',
+                fullname: 'Manuel Fernandez'
+            },
+            date: randomDate(new Date(2012, 0, 1), new Date()),
+            message: "Please respond"
+        }]
+    },
+    {
+        title: "I dont understand",
+        messages: [{
+            sender: {
+                img: '../images/students/6.jpg',
+                fullname: 'Johnatan Hernandez'
+            },
+            date: randomDate(new Date(2012, 0, 1), new Date()),
+            message: "Help help!"
+        }]
+    },
+    {
+        title: "This has to be changed",
+        messages: [{
+            sender: {
+                img: '../images/students/7.jpg',
+                fullname: 'Fernando Lopez'
+            },
+            date: randomDate(new Date(2012, 0, 1), new Date()),
+            message: "It seriously needs tochange"
+        }]
+    },
+    {
+        title: "First post",
+        messages: [{
+            sender: {
+                img: '../images/students/8.jpg',
+                fullname: 'Martina Fernandez'
+            },
+            date: randomDate(new Date(2012, 0, 1), new Date()),
+            message: "I need help"
+        }]
+    }
+]
 $(document).ready(function() {
     //First show course
     changeCentral(".course");
@@ -6,11 +67,9 @@ $(document).ready(function() {
     //Changeing of central container
     $(".course_button").click(function() {
         changeCentral(".course");
-        showForum();
     });
     $(".participants_button").click(function() {
         changeCentral(".participants");
-        showForum();
     });
     $(".forum_button").click(function() {
         changeCentral(".forum");
@@ -18,11 +77,15 @@ $(document).ready(function() {
     });
     $(".groups_button").click(function() {
         changeCentral(".groups");
-        showForum();
     });
     $(".grades_button").click(function() {
         changeCentral(".grades");
-        showForum();
+    });
+
+    $(".post").click((event) => {
+        console.log($(event.target));
+        console.log($(event.target).data("id"));
+        showTopic($(event.target).data("id"));
     });
 });
 
@@ -30,6 +93,96 @@ $(document).ready(function() {
 function changeCentral(toChange) {
     $(".central").hide();
     $(toChange).show();
+}
+
+function showForum() {
+    var forumm = $("#forum");
+
+    forumm.empty();
+    forum.forEach((post) => {
+        const markup = `<article class="post" onclick="showTopic('${post.title}')"><ul class="info"><li><h3>` +
+            post.title + `</h3>
+            </li>
+            <li><strong>Messages: </strong> ` + post.messages.length + ` </li>
+            <li><strong>Last message: </strong> ` + post.messages[post.messages.length - 1].date +
+            ` </li>
+            </ul>
+        </article>`;
+        forumm.append(markup);
+    });
+}
+//We update the grades table
+function showTopic(topic) {
+    var forumm = $("#forum")
+    currentTopic = topic;
+    forumm.empty();
+    var table = `<h4>${topic}</h4>
+    <table>
+    <thead>
+        <tr>
+            <th>
+                Profile image
+            </th>
+            <th>
+                Name and Surname
+            </th>
+            <th>
+                Message
+            </th>
+            <th>
+                Date posted
+            </th>
+        </tr>
+    </thead>
+    <tbody>`;
+    forum.forEach((post) => {
+        //If it is the post
+        if (post.title === topic) {
+            //For each message
+            post.messages.forEach((message) => {
+                const markup = `<tr>
+                    <td><img src="${message.sender.img}" width='50' height='50' class="avatar" alt="avatar" /></td>
+                    <td>${message.sender.fullname}</td>
+                    <td class="message">${message.message}</td>
+                    <td>${message.date.toDateString()}</td>
+                </tr>`;
+                table += markup;
+            });
+        }
+
+    });
+    table += `
+    </tbody>
+</table>
+
+<div id="submit-message">
+<h3>Submit your message</h3>
+<textarea id="textarea-message"></textarea>
+<a class="button6 message" id="message-submit" href="javascript:{}">Submit message</a>
+</div>`;
+    forumm.append(table);
+
+    //submit message
+    $("#message-submit").click(() => {
+        var textarea = $("#textarea-message");
+        forum.forEach((post) => {
+            if (post.title === currentTopic) {
+                const message = {
+                    sender: {
+                        img: user && user.img || '',
+                        fullname: user && user.fullname || ''
+                    },
+                    date: new Date(),
+                    message: textarea.val()
+                };
+                post.messages.push(message);
+
+                showTopic(currentTopic);
+                textarea.val("");
+            }
+        });
+    });
+
 }
 
 function edit() {
@@ -40,5 +193,6 @@ function edit() {
     <a href="#">${title}</a>
 </div>`
     $(`#${editing}`).append(markup);
+    alert("Added successfully!");
     $(".edit-popup").hide();
 }

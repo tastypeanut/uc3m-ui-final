@@ -15,8 +15,8 @@
     <title>eAcademy</title>
 </head>
 
-<body onload="$('.edit-popup').hide();">
-    <div class="popup edit-popup">
+<body>
+    <div class="popup edit-popup" style="display: none;">
         <div class="popup-bg" onclick="$('.edit-popup').hide();"></div>
         <div class=" popup-content">
             <div class="add-element">
@@ -55,13 +55,14 @@
         <a href="../main/main-student.html">Courses</a>
         <a class="course_button" href="#">User Interfaces</a>
         <a class="central participants">Participants</a>
+        <a class="central forum">Forum</a>
         <a class="central grades">Grades</a>
         <a class="central groups">Work groups</a>
     </div>
     <main>
         <div class="col-left">
             <button class="button button1 course_button">Contents</button>
-            <button class="button button1">Forum</button>
+            <button class="button button1 forum_button">Forum</button>
             <button class="button button1 participants_button">Participants</button>
             <button class="button button1 grades_button">Grades</button>
             <button class="button button1 groups_button">Work Groups</button>
@@ -190,6 +191,14 @@
                     </div>
                 </div>
                 <p></p>
+            </section>
+            <!--The forum section-->
+            <!--Each topic is a row-->
+            <section class="central forum">
+                <h2 class="section-title">Forum</h2>
+                <div id="forum">
+
+                </div>
             </section>
             <!--The students section-->
             <!--Each student has an avatar and info list-->

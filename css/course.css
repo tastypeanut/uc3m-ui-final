@@ -273,3 +273,82 @@ input[type=file] {
     background-color: #457B9D;
     color: white;
 }
+
+
+/* Forum styles */
+
+#forum .post {
+    width: 90%;
+    z-index: 10;
+    background-color: white;
+    position: relative;
+    left: 5%;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+#forum h3 {
+    margin: 0;
+    font-size: large;
+    color: rgb(56, 56, 56);
+}
+
+#forum h4 {
+    font-size: x-large;
+    color: rgb(56, 56, 56);
+}
+
+#forum .post ul {
+    width: 100%;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#forum .post ul li {
+    margin-bottom: 0;
+    margin-left: 5%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+#forum table {
+    margin: 1% 0 2% 5%;
+    font-size: large;
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+#forum th,
+#forum td {
+    padding: 10px;
+    text-align: left;
+    border: black 1px solid;
+}
+
+#forum td.message {
+    width: 80%;
+}
+
+#submit-message {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    margin-bottom: 5%;
+}
+
+#textarea-message {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    min-height: 100px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
