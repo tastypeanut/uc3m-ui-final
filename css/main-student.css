@@ -166,6 +166,39 @@ main {
 }
 
 
+/* Table of grade revision */
+
+#gradesTable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+#gradesTable td,
+#gradesTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#gradesTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#gradesTable tr:hover {
+    background-color: #ddd;
+}
+
+#gradesTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #457B9D;
+    color: white;
+}
+
+
+
 /*
                                      _           
  _ __ ___  ___ _ __   ___  _ __  ___(_)_   _____ 
