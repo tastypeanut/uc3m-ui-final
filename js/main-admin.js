@@ -3,14 +3,7 @@ if (cookie_in_use == null || getCookie(cookie_in_use) == null || JSON.parse(atob
     window.location.href = "../auth.html";
 }
 
-$(document).ready(function() {
-    $('#logout').click(function(){
-        if (confirm("Are you sure you want to log out?")) {
-            localStorage.removeItem('cookie_in_use'); 
-            window.location.href = "../auth.html";
-        }
-    });
-
+$(document).ready(function(){
     //First show course
     changeCentral("#events");
     
