@@ -196,7 +196,7 @@ function showTopic(topic) {
             if (post.title === currentTopic) {
                 const message = {
                     sender: {
-                        img: getUser()['img'] || '../images/students/45.png',
+                        img: getUser()['img'] || '../images/profile.png',
                         fullname: getUser()['full_name'] || ''
                     },
                     date: new Date(),
