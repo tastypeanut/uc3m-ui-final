@@ -150,7 +150,6 @@ main {
     border: 1px solid lightblue;
     box-shadow: 2px 2px 8px rgba(61, 59, 175, 0.288);
     border-radius: 10px;
-    align-items: left;
 }
 
 
@@ -177,7 +176,8 @@ main {
     margin-bottom: 2%;
 }
 
-[id*="gradesTable"] td, [id*="gradesTable"] th {
+[id*="gradesTable"] td,
+[id*="gradesTable"] th {
     border: 1px solid #ddd;
     padding: 8px;
 }
@@ -198,12 +198,12 @@ main {
     color: white;
 }
 
-.tableexport-caption .button-default{
+.tableexport-caption .button-default {
     margin-top: 4%;
     margin-bottom: 6%;
 }
 
-.tableexport-caption .button-default{
+.tableexport-caption .button-default {
     display: inline-block;
     padding: 10px 20px;
     font-size: 15px;
@@ -230,7 +230,6 @@ main {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
 
 
 /*

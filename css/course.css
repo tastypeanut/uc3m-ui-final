@@ -216,7 +216,6 @@ h2 {
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px #1D3557;
-    width: 25 px;
     float: right;
 }
 
@@ -279,7 +278,8 @@ input[type=file] {
     margin-bottom: 2%;
 }
 
-[id*="gradesTable"] td, [id*="gradesTable"] th {
+[id*="gradesTable"] td,
+[id*="gradesTable"] th {
     border: 1px solid #ddd;
     padding: 8px;
 }
@@ -379,17 +379,17 @@ input[type=file] {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-.tableexport-caption{
+.tableexport-caption {
     margin-top: 4%;
     margin-bottom: 6%;
 }
 
-.tableexport-caption .button-default{
+.tableexport-caption .button-default {
     margin-top: 4%;
     margin-bottom: 6%;
 }
 
-.tableexport-caption .button-default{
+.tableexport-caption .button-default {
     display: inline-block;
     padding: 10px 20px;
     font-size: 15px;
@@ -416,6 +416,7 @@ input[type=file] {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
 
 /*
                                      _           
