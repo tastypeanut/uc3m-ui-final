@@ -60,6 +60,73 @@ main {
 }
 
 
+/* Edit button */
+
+.buttonEdit {
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #31587A;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px #1D3557;
+    width: auto;
+    float: right;
+}
+
+.buttonEdit:hover {
+    background-color: #31587A
+}
+
+.buttonEdit:active {
+    background-color: #31587A;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/* Edit Popup */
+
+.button-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.button-submit a {
+    margin-top: 20px;
+    background-color: #31587A;
+    color: white;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+select {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+input[type=file] {
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
 /* Center column */
 
 .col-center {

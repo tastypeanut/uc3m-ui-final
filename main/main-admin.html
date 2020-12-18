@@ -28,6 +28,82 @@
     </div>
     <div class="breadcrumb"><a href="">Admin page</a></div>
     <main>
+        <div class="popup create-course-popup" style="display: none;">
+            <div class="popup-bg" onclick="$('.create-course-popup').hide();"></div>
+            <div class=" popup-content">
+                <div class="add-element">
+                    <h2>Add course</h2>
+                    <div class="form-group">
+                        <h4>Level</h4>
+                        <select id="edit-select">
+                            <option value="school">School</option>
+                            <option value="hs">Highschool</option>
+                            <option value="uni">University</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h4>Title</h4>
+                        <input type="text" id="edit-title" placeholder="Title" />
+                    </div>
+
+                    <div class="form-group">
+                        <h4>Professor</h4>
+                        <input type="text" id="edit-proffessor" placeholder="Professor" />
+                    </div>
+                    <div class="form-group button-submit">
+                        <a href="#" onclick="createCourse()">Add to course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup add-student-popup" style="display: none;">
+            <div class="popup-bg" onclick="$('.add-student-popup').hide();"></div>
+            <div class=" popup-content">
+                <div class="add-element">
+                    <h2>Add student to course</h2>
+                    <div class="form-group">
+                        <h4>Student</h4>
+                        <select id="edit-select">
+                            <option value="0">Bradley Cooper</option>
+                            <option value="1">Connor Liam</option>
+                            <option value="2">Maynard Lope</option>
+                            <option value="3">Tanner Fox</option>
+                            <option value="4">Stephen James</option>
+                            <option value="5">Kawhi Curry</option>
+                            <option value="6">Aaron Gordon</option>
+                            <option value="7">Dele Alli</option>
+                        </select>
+                    </div>
+                    <div class="form-group button-submit">
+                        <a href="#" onclick="$('.add-student-popup').hide();">Add student</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup add-teacher-popup" style="display: none;">
+            <div class="popup-bg" onclick="$('.add-teacher-popup').hide();"></div>
+            <div class=" popup-content">
+                <div class="add-element">
+                    <h2>Add teacher to course</h2>
+                    <div class="form-group">
+                        <h4>teacher</h4>
+                        <select id="edit-select">
+                            <option value="0">Bradley Cooper</option>
+                            <option value="1">Connor Liam</option>
+                            <option value="2">Maynard Lope</option>
+                            <option value="3">Tanner Fox</option>
+                            <option value="4">Stephen James</option>
+                            <option value="5">Kawhi Curry</option>
+                            <option value="6">Aaron Gordon</option>
+                            <option value="7">Dele Alli</option>
+                        </select>
+                    </div>
+                    <div class="form-group button-submit">
+                        <a href="#" onclick="$('.add-teacher-popup').hide();">Add teacher</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-left">
             <a class="button buttonHome">Admin Panel</a>
             <a class="button courses_button">Courses</a>
@@ -149,35 +225,46 @@
                 </div>
             </section>
             <section class="central" id="courses">
+                <button class="button buttonEdit" style="margin-right: 5%;" onclick="$( '.create-course-popup').show();">Create course</button>
                 <h2 class="section-title">Courses</h2>
                 <article class='course-card'>
                     <h4 class="course-name">Mathematics</h4>
                     <div class="course-info">
-                        <h5 class="professor">Professor: Marthin Heynes</h5>
+                        <h5 class="professor" style="flex-grow: 1;">Professor: Marthin Heynes</h5>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-teacher-popup').show();">+ teacher</a>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-student-popup').show();">+ student</a>
                     </div>
                 </article>
                 <article class='course-card'>
                     <h4 class="course-name">Language</h4>
                     <div class="course-info">
-                        <h5 class="professor">Professor: Magnus Olsson</h5>
+                        <h5 class="professor" style="flex-grow: 1;">Professor: Magnus Olsson</h5>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-teacher-popup').show();">+ teacher</a>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-student-popup').show();">+ student</a>
                     </div>
                 </article>
                 <article class='course-card'>
                     <h4 class="course-name">IT</h4>
                     <div class="course-info">
-                        <h5 class="professor">Professor: Anatoli Kárpov</h5>
+                        <h5 class="professor" style="flex-grow: 1;">Professor: Anatoli Kárpov</h5>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-teacher-popup').show();">+ teacher</a>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-student-popup').show();">+ student</a>
                     </div>
                 </article>
                 <article class='course-card'>
                     <h4 class="course-name">Art</h4>
                     <div class="course-info">
-                        <h5 class="professor">Professor: Louis Trois</h5>
+                        <h5 class="professor" style="flex-grow: 1;">Professor: Louis Trois</h5>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-teacher-popup').show();">+ teacher</a>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-student-popup').show();">+ student</a>
                     </div>
                 </article>
                 <article class='course-card'>
                     <h4 class="course-name">Philosophy</h4>
                     <div class="course-info">
-                        <h5 class="professor">Professor: Alejandro Pérez</h5>
+                        <h5 class="professor" style="flex-grow: 1;">Professor: Alejandro Pérez</h5>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-teacher-popup').show();">+ teacher</a>
+                        <a class="buttonEdit" href="#" onclick="$( '.add-student-popup').show();">+ student</a>
                     </div>
                 </article>
             </section>
