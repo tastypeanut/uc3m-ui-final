@@ -19,22 +19,29 @@
 </head>
 
 <body>
+    <!-- This is the header -->
     <div class="header">
         <img src="../images/logo.png" height="60">
+        <!-- First of all it inserts the logo image at the left part of the header -->
         <div class="header-right">
+            <!-- Then it has the following options (home, messages, log out,"profile image") which can be clicked and it will redirect you to the selected option -->
+            <!-- In the home bottom, it applies the function goHome() which depending on the user role goes to the main_teacher, main_student or main_admin files -->
             <a href="#" onclick="goHome();">Home</a>
             <a href="../main/messages.html">Messages</a>
             <a id="logout">Log out</a>
             <a href="#"><img src="../images/profile.png" height="55"></a>
         </div>
     </div>
+    <!-- In the breadcrumb class we have the navigation bar which indicates were the user is -->
     <div class="breadcrumb"><a href="#" onclick="goHome();">Home</a><a href="">Messages</a></div>
     <main>
+        <!-- In the left container we have the home button -->
         <div class="col-left col-2">
             <a onclick="goHome();" class="button">Home</a>
         </div>
         <div class="col-center col-7" id="course-list">
-
+            <!-- In the central container we have the inbox site where there is a list with the messages that the user have received -->
+            <!-- As in the main_students central container it is divided in articles, each one containing the message sender and the message content -->
             <h1 class="title">Inbox</h1>
             <article class='course-card'>
                 <h4 class="course-name">Ángel García</h4>
@@ -86,6 +93,7 @@
 
         <div id="calendar" title="Next Events Calendar"></div>
         <div class="col-right col-3">
+            <!-- In the right column there is a functional calendar and right under it there is a list with the latest news -->
             <div id="calendarRed" title="Next Events Calendar"></div>
             <h4>Latest News:</h4>
             <p>10/12 - Group members list uploaded!</p>
@@ -94,6 +102,7 @@
         </div>
     </main>
     <footer>
+        <!-- In the footer there are some links (about us, help, Features,...) that would go to other sites, but those sites aren't created yet -->
         <nav class="bottom-nav">
             <table>
                 <tbody>
