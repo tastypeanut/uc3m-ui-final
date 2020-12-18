@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang='en'>
 
 <head>
     <meta charset="UTF-8">
@@ -20,13 +21,13 @@
     <!-- This is the header -->
     <div class="header">
         <!-- First of all it inserts the logo image at the left part of the header -->
-        <img src="../images/logo.png" height="60">
+        <img src="../images/logo.png" height="60" alt="logo">
         <div class="header-right">
             <!-- Then it has the following options (home, messages, log out,"profile image") which can be clicked and it will redirect you to the selected option -->
             <a href="../main/main-admin.html">Home</a>
             <a href="../main/messages.html">Messages</a>
             <a id="logout">Log out</a>
-            <a href="#"><img src="../images/profile.png" height="55"></a>
+            <a href="#"><img src="../images/profile.png" height="55" alt="profile"></a>
         </div>
     </div>
     <!-- In the breadcrumb class we have the navigation bar which indicates were the user is -->
@@ -39,7 +40,7 @@
                     <h2>Add course</h2>
                     <div class="form-group">
                         <h4>Level</h4>
-                        <select id="edit-select">
+                        <select>
                             <option value="school">School</option>
                             <option value="hs">Highschool</option>
                             <option value="uni">University</option>
@@ -67,7 +68,7 @@
                     <h2>Add student to course</h2>
                     <div class="form-group">
                         <h4>Student</h4>
-                        <select id="edit-select">
+                        <select>
                             <option value="0">Bradley Cooper</option>
                             <option value="1">Connor Liam</option>
                             <option value="2">Maynard Lope</option>
@@ -91,7 +92,7 @@
                     <h2>Add teacher to course</h2>
                     <div class="form-group">
                         <h4>teacher</h4>
-                        <select id="edit-select">
+                        <select>
                             <option value="0">Bradley Cooper</option>
                             <option value="1">Connor Liam</option>
                             <option value="2">Maynard Lope</option>
@@ -184,7 +185,7 @@
                     </ul>
                 </div>
             </section>
-            
+
             <!-- This would be shown in the case of the teacher botton being selected, each teacher is shown in a container specifying the name, surname and emai, and there is an email emoji which you can click to send a message to that teacher -->
             <section id="teachers" class="central">
                 <h2 class="section-title">Teachers</h2>
@@ -281,7 +282,6 @@
                 </article>
             </section>
         </div>
-    </main>
     </main>
     <footer>
         <!-- In the footer there are some links (about us, help, Features,...) that would go to other sites, but those sites aren't created yet -->

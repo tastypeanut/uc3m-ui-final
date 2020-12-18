@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang='en'>
 
 <head>
     <meta charset="UTF-8">
@@ -52,13 +53,13 @@
     <!-- This is the header -->
     <div class="header">
         <!-- First of all it inserts the logo image at the left part of the header -->
-        <img src="../images/logo.png" height="60">
+        <img src="../images/logo.png" alt="logo" height="60">
         <div class="header-right">
             <!-- Then it has the following options (home, messages, log out,"profile image") which can be clicked and it will redirect you to the selected option -->
             <a href="#" onclick="goHome();">Home</a>
             <a href="../main/messages.html">Messages</a>
             <a id="logout">Log out</a>
-            <a href="#"><img src="../images/profile.png" height="55"></a>
+            <a href="#"><img src="../images/profile.png" alt="profile" height="55"></a>
         </div>
     </div>
     <div class="breadcrumb">
@@ -79,17 +80,17 @@
             <a class="button grades_button">Grades</a>
             <a class="button groups_button">Work Groups</a>
         </div>
-        <!-- This is the central container --> 
+        <!-- This is the central container -->
         <div class="col-center-course col-center col-7 col-s-12">
             <section class="central course">
                 <!-- This button drops a pop-up for editing content -->
                 <button class="button buttonEdit" onclick="$( '.edit-popup').show(); editing = 'class'">Edit content</button>
-                
+
                 <!-- In the rest of the container we have the course contents with pdfs, links and submissions -->
                 <h2>Online Class</h2>
                 <div id="class">
                     <div class="item-container">
-                        <img class="icon" src="../images/puzle.svg">
+                        <img alt="pdf" class="icon" src="../images/puzle.svg">
                         <a href="https://eu-lti.bbcollab.com/collab/ui/scheduler/session"> Classroom [2020/21] M2.218.13888-89 MAG. Computer Architecture 20/21-S1</a>
                     </div>
                 </div>
@@ -100,13 +101,13 @@
                 <h1 class="title">Fundamentals of Computer Design</h1>
                 <div id="topic1">
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/Introduction to Human-Computer Interaction.pdf"> Fundamentals of Computer Design</a>
                     </div>
                     <p></p>
 
                     <div class="item-container">
-                        <img class="icon" src="../images/assignment.png" class="icon">
+                        <img alt="pdf" class="icon" src="../images/assignment.png">
                         <a> Delivery Exercise 1</a>
                     </div>
                 </div>
@@ -117,22 +118,22 @@
                 <h1 class="title">Performance Evaluation in Computer Systems</h1>
                 <div id="topic2">
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema2-1-UserInterface-Publish.pdf"> Trends and EvaluationFile</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema2-2-Usability-Publish.pdf"> Exercises on PerformanceFile</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/assignment.png" class="icon">
+                        <img alt="pdf" class="icon" src="../images/assignment.png">
                         <a> Quiz 1 - Group 89</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema2-4-Accessibility.pdf"> Reliability and StorageFile</a>
                     </div>
                 </div>
@@ -143,27 +144,27 @@
                 <h1 class="title">Instruction Level Parallelism</h1>
                 <div id="topic3">
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema3-1-WebDesign.pdf"> Introduction to Instruction Level ParallelismFile</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema3-2-WebPrinciples.pdf"> Branch prediction and loop unrollingFile</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema3-WebDesignPatternsbyVanDuyne.pdf"> Advanced Instruction Level ParallelismFile</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema3-WebDesignPatternsbyVanDuyne-Example.pdf"> Lab 1: Instruction Level ParallelismFile</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/assignment.png" class="icon">
+                        <img alt="pdf" class="icon" src="../images/assignment.png">
                         <a> Modified programsAssignment</a>
                     </div>
                 </div>
@@ -174,28 +175,28 @@
                 <h1 class="title">Memory Hierarchy</h1>
                 <div id="topic4">
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema4-Requirements_and_Interaction_models.pdf"> Cache memory basicsFile</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema4-Evaluation_Inspection.pdf">  Advanced cache memoryFile</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/assignment.png" class="icon">
+                        <img alt="pdf" class="icon" src="../images/assignment.png">
                         <a> Quizz 3: Group 89</a>
                     </div>
                     <p></p>
                     <div class="item-container">
-                        <img class="icon" src="../images/pdf.svg">
+                        <img alt="pdf" class="icon" src="../images/pdf.svg">
                         <a href="../pdfs/tema4-Evaluation_Inspection.pdf"> Exercises on Cache MemoryFile</a>
                     </div>
                 </div>
                 <p></p>
             </section>
-            
+
             <!--The forum section-->
             <!--Each topic is a row-->
             <section class="central forum">
