@@ -6,3 +6,16 @@ function getUser() {
     }
     return null;
 }
+
+
+function goHome() {
+    if (getUser()['role'] === 'Student') {
+        window.location.href = '../main/main-student.html';
+    }
+    if (getUser()['role'] === 'Teacher') {
+        window.location.href = '../main/main-teacher.html';
+    }
+    if (getUser()['role'] === 'Administrator') {
+        window.location.href = '../main/main-admin.html';
+    }
+}

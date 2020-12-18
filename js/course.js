@@ -186,8 +186,8 @@ function showTopic(topic) {
             if (post.title === currentTopic) {
                 const message = {
                     sender: {
-                        img: user && user.img || '',
-                        fullname: user && user.fullname || ''
+                        img: getUser()['img'] || '../images/students/45.png',
+                        fullname: getUser()['full_name'] || ''
                     },
                     date: new Date(),
                     message: textarea.val()
@@ -201,6 +201,7 @@ function showTopic(topic) {
     });
 
 }
+
 
 function edit() {
     var select = $('#edit-select').val();
