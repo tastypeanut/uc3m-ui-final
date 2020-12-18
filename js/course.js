@@ -76,6 +76,11 @@ $(document).ready(function() {
     console.log(getUser());
     if (getUser()['role'] === 'Student') {
         $('.buttonEdit').hide();
+        $('#teacher').hide();
+        $('#student').show();
+    } else {
+        $('#student').hide();
+        $('#teacher').show();
     }
 
     //First show course
