@@ -8,6 +8,14 @@ body {
     background-color: white;
 }
 
+main {
+    flex-wrap: wrap;
+}
+
+main>* {
+    margin-bottom: 10%;
+}
+
 .header {
     overflow: hidden;
     background-color: #131B26;
@@ -64,7 +72,6 @@ body {
 
 .col-left {
     padding: 0;
-    margin-left: 1.75%;
     border: 1px solid lightblue;
     box-shadow: 2px 2px 8px rgba(61, 59, 175, 0.288);
     border-radius: 10px;
@@ -73,7 +80,6 @@ body {
     height: fit-content;
     height: -moz-fit-content;
     overflow: hidden;
-    width: 15vw;
 }
 
 .col-left .button {
@@ -172,7 +178,6 @@ footer .bottom-nav table td {
     font-size: 1.2rem;
     background-color: #31587A;
     padding: 20px;
-    height: 100%;
 }
 
 .breadcrumb a:first-child {
@@ -223,4 +228,8 @@ footer .bottom-nav table td {
 #gradesTable {
     width: 95%;
     text-align: center;
+}
+
+#logout {
+    cursor: pointer;
 }
