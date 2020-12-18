@@ -16,6 +16,12 @@ a {
     text-decoration: none;
 }
 
+/*Left Column*/
+.col-left {
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+}
+
 
 /* Center column */
 
@@ -52,7 +58,7 @@ a {
 
 .course-card .course-name {
     padding: 0 20px;
-    line-height: 0.5rem;
+    /*line-height: 0.5rem;*/
     min-width: 150px;
 }
 
