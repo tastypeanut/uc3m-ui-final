@@ -19,22 +19,29 @@
 </head>
 
 <body>
+    <!-- This is the header -->
     <div class="header">
+        <!-- First of all it inserts the logo image at the left part of the header -->
         <img src="../images/logo.png" height="60">
         <div class="header-right">
+            <!-- Then it has the following options (home, messages, log out,"profile image") which can be clicked and it will redirect you to the selected option -->
             <a href="../main/main-teacher.html">Home</a>
             <a href="../main/messages.html">Messages</a>
             <a id="logout">Log out</a>
             <a href="#"><img src="../images/profile.png" height="55"></a>
         </div>
     </div>
+    <!-- In the breadcrumb class we have the navigation bar which indicates were the user is -->
     <div class="breadcrumb"><a href="../main/main-teacher.html">Home</a></div>
     <main>
         <div class="col-left col-2 col-s-12">
+            <!-- In the left container we have the grade revision and messages buttons -->
             <a href="grade-revision.html" class="button">Grade revisons</a>
             <a href="messages.html" class="button">Messages</a>
         </div>
         <div class="col-center col-7 col-s-12" id="course-list">
+            <!-- In the central container we have list with the courses that the teacher has, and can select any of the courses that are shown -->
+            <!-- Each subject is divided in an article, which shows the name of the subject and the number of students that are in each course -->
             <h1 class="title">My courses</h1>
             <article class='course-card'>
                 <h4 class="course-name">User Interfaces</h4>
@@ -84,6 +91,7 @@
         </div>
         <div id="calendar" title="Next Events Calendar"></div>
         <div class="col-right col-3 col-s-12">
+            <!-- In the right column there is a functional calendar and right under it there is a list with the latest news -->
             <div id="calendarRed" title="Next Events Calendar"></div>
             <h4>Latest News:</h4>
             <p>10/12 - Group members list uploaded!</p>
@@ -92,6 +100,7 @@
         </div>
     </main>
     <footer>
+        <!-- In the footer there are some links (about us, help, Features,...) that would go to other sites, but those sites aren't created yet -->
         <nav class="bottom-nav">
             <table>
                 <tbody>
