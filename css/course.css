@@ -271,28 +271,28 @@ input[type=file] {
 
 /* Table of the grades */
 
-#gradesTable {
+[id*="gradesTable"] {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
     text-align: center;
+    margin-bottom: 2%;
 }
 
-#gradesTable td,
-#gradesTable th {
+[id*="gradesTable"] td, [id*="gradesTable"] th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#gradesTable tr:nth-child(even) {
+[id*="gradesTable"] tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-#gradesTable tr:hover {
+[id*="gradesTable"] tr:hover {
     background-color: #ddd;
 }
 
-#gradesTable th {
+[id*="gradesTable"] th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
@@ -377,6 +377,11 @@ input[type=file] {
     padding: 30px;
     min-height: 100px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tableexport-caption{
+    margin-top: 4%;
+    margin-bottom: 6%;
 }
 
 
