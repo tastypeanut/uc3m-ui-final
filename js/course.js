@@ -68,7 +68,7 @@ $(document).ready(function() {
             window.location.href = "../auth.html";
         }
     });
-
+    console.log(getUser());
     if (getUser()['role'] === 'Student') {
         $('.buttonEdit').hide();
     }
