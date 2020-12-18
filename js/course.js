@@ -1,3 +1,8 @@
+var cookie_in_use = localStorage.getItem('cookie_in_use');
+if (cookie_in_use == null || getCookie(cookie_in_use) == null) {
+    window.location.href = "../auth.html";
+}
+
 var editing;
 var user;
 
