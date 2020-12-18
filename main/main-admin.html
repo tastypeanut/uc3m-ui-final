@@ -17,15 +17,19 @@
 </head>
 
 <body>
+    <!-- This is the header -->
     <div class="header">
+        <!-- First of all it inserts the logo image at the left part of the header -->
         <img src="../images/logo.png" height="60">
         <div class="header-right">
+            <!-- Then it has the following options (home, messages, log out,"profile image") which can be clicked and it will redirect you to the selected option -->
             <a href="../main/main-admin.html">Home</a>
             <a href="../main/messages.html">Messages</a>
             <a id="logout">Log out</a>
             <a href="#"><img src="../images/profile.png" height="55"></a>
         </div>
     </div>
+    <!-- In the breadcrumb class we have the navigation bar which indicates were the user is -->
     <div class="breadcrumb"><a href="">Admin page</a></div>
     <main>
         <div class="popup create-course-popup" style="display: none;">
@@ -104,6 +108,7 @@
                 </div>
             </div>
         </div>
+        <!-- In the left container we have the admin panel, courses, students and teachers buttons -->
         <div class="col-left">
             <a class="button buttonHome">Admin Panel</a>
             <a class="button courses_button">Courses</a>
@@ -111,6 +116,8 @@
             <a class="button teachers_button">Teachers</a>
         </div>
         <div class="col-center" id="admin-central">
+            <!-- The central container changes its content depending on which option from the left column is selected -->
+            <!-- In the case that "Admin Panel" is selected, it shows a list from the last events that has been done -->
             <article id="events" class="central">
                 <h2 class="section-title">Last events</h2>
                 <ul>
@@ -128,6 +135,7 @@
             </article>
             <!--The students section-->
             <!--Each student has an avatar and info list-->
+            <!-- This would be shown in the case of the student botton being selected, each student is shown in a container specifying the name, surname and emai, and there is an email emoji which you can click to send a message to that student -->
             <section id="students" class="central">
                 <h2 class="section-title">Students</h2>
                 <div class="student">
@@ -176,6 +184,8 @@
                     </ul>
                 </div>
             </section>
+            
+            <!-- This would be shown in the case of the teacher botton being selected, each teacher is shown in a container specifying the name, surname and emai, and there is an email emoji which you can click to send a message to that teacher -->
             <section id="teachers" class="central">
                 <h2 class="section-title">Teachers</h2>
                 <div class="student">
@@ -224,6 +234,8 @@
                     </ul>
                 </div>
             </section>
+            <!-- This would be shown in the case of the courses botton being selected, each course is shown in a container specifying the course and the teacher -->
+            <!-- There are also in the right side of each course two bottom with the option of adding a teacher or a student to any course -->
             <section class="central" id="courses">
                 <button class="button buttonEdit" style="margin-right: 5%;" onclick="$( '.create-course-popup').show();">Create course</button>
                 <h2 class="section-title">Courses</h2>
@@ -272,6 +284,7 @@
     </main>
     </main>
     <footer>
+        <!-- In the footer there are some links (about us, help, Features,...) that would go to other sites, but those sites aren't created yet -->
         <nav class="bottom-nav">
             <table>
                 <tbody>

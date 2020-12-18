@@ -22,6 +22,7 @@
 </head>
 
 <body>
+    <!-- If you click the edit content button, it appears this pop-up which lets you add a pdf file or a assignment to a course -->
     <div class="popup edit-popup" style="display: none;">
         <div class="popup-bg" onclick="$('.edit-popup').hide();"></div>
         <div class=" popup-content">
@@ -48,9 +49,13 @@
             </div>
         </div>
     </div>
+    
+     <!-- This is the header -->
     <div class="header">
+        <!-- First of all it inserts the logo image at the left part of the header -->
         <img src="../images/logo.png" height="60">
         <div class="header-right">
+            <!-- Then it has the following options (home, messages, log out,"profile image") which can be clicked and it will redirect you to the selected option -->
             <a href="#" onclick="goHome();">Home</a>
             <a href="../main/messages.html">Messages</a>
             <a id="logout">Log out</a>
@@ -58,6 +63,7 @@
         </div>
     </div>
     <div class="breadcrumb">
+        <!-- In the breadcrumb class we have the navigation bar which indicates were the user is -->
         <a href="#" onclick="goHome();">Courses</a>
         <a class="course_button" href="#">User Interfaces</a>
         <a class="central participants">Participants</a>
@@ -66,6 +72,7 @@
         <a class="central groups">Work groups</a>
     </div>
     <main>
+        <!-- In the left container we have the contents, forum, participants, grades and work groups buttons -->
         <div class="col-left col-2 col-s-12">
             <a class="button course_button">Contents</a>
             <a class="button forum_button">Forum</a>
@@ -73,10 +80,13 @@
             <a class="button grades_button">Grades</a>
             <a class="button groups_button">Work Groups</a>
         </div>
+        <!-- This is the central container --> 
         <div class="col-center-course col-center col-7 col-s-12">
             <section class="central course">
+                <!-- This button drops a pop-up for editing content -->
                 <button class="button buttonEdit" onclick="$( '.edit-popup').show(); editing = 'class'">Edit content</button>
-
+                
+                <!-- In the rest of the container we have the course contents with pdfs, links and submissions -->
                 <h2>Online Class</h2>
                 <div id="class">
                     <div class="item-container">
@@ -207,7 +217,7 @@
                 </div>
             </section>
             <!--The students section-->
-            <!--Each student has an avatar and info list-->
+            <!-- If the students button from the left corner is selected it shows each student with an avatar and info list -->
             <section class="central participants">
                 <h2 class="section-title">Participants</h2>
                 <div class="student">
@@ -323,6 +333,7 @@
             </section>
 
             <section class="central grades">
+                <!-- If the grades button from the left corner is selected it shows each student with grades obtained during the course -->
                 <h2 class="section-title">Grades</h2>
                 <div id="teacher" style="display:none;">
                     <table id="gradesTableTeacher">
@@ -416,6 +427,7 @@
                         </tr>
                     </table>
                 </div>
+                <!-- If the students button from the left corner is selected and the role is student it only shows that student grades -->
                 <div id="student">
                     <table id="gradesTableStudent">
                         <tr>
@@ -486,6 +498,7 @@
         </div>
         <div id="calendar" title="Next Events Calendar"></div>
         <div class="col-right col-3 col-s-12">
+            <!-- In the right column there is a functional calendar and right under it there is a list with the latest news -->
             <div id="calendarRed" title="Next Events Calendar"></div>
             <h4>Latest News:</h4>
             <p>10/12 - Group members list uploaded!</p>
@@ -494,6 +507,7 @@
         </div>
     </main>
     <footer>
+        <!-- In the footer there are some links (about us, help, Features,...) that would go to other sites, but those sites aren't created yet -->
         <nav class="bottom-nav">
             <table>
                 <tbody>
