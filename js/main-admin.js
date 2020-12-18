@@ -1,7 +1,7 @@
-// var cookie_in_use = localStorage.getItem('cookie_in_use');
-// if (cookie_in_use == null || getCookie(cookie_in_use) == null || JSON.parse(atob(getCookie(cookie_in_use)))['role'] != "Administrator") {
-//     window.location.href = "../auth.html";
-// }
+var cookie_in_use = localStorage.getItem('cookie_in_use');
+if (cookie_in_use == null || getCookie(cookie_in_use) == null || JSON.parse(atob(getCookie(cookie_in_use)))['role'] != "Administrator") {
+   window.location.href = "../auth.html";
+}
 
 $(document).ready(function() {
     //First show course
