@@ -169,33 +169,66 @@ main {
 
 /* Table of grade revision */
 
-#gradesTable {
+[id*="gradesTable"] {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
     text-align: center;
+    margin-bottom: 2%;
 }
 
-#gradesTable td,
-#gradesTable th {
+[id*="gradesTable"] td, [id*="gradesTable"] th {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-#gradesTable tr:nth-child(even) {
+[id*="gradesTable"] tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-#gradesTable tr:hover {
+[id*="gradesTable"] tr:hover {
     background-color: #ddd;
 }
 
-#gradesTable th {
+[id*="gradesTable"] th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #457B9D;
     color: white;
+}
+
+.tableexport-caption .button-default{
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+
+.tableexport-caption .button-default{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #31587A;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px #1D3557;
+    width: 20%;
+}
+
+.tableexport-caption .button-default:hover {
+    background-color: #31587A
+}
+
+.tableexport-caption .button-default:active {
+    background-color: #31587A;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 
